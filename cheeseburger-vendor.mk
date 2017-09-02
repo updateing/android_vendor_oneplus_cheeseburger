@@ -1,4 +1,4 @@
-# Copyright (C) 2017 The MoKee Open Source Project
+# Copyright (C) 2017 The LineageOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -765,13 +765,9 @@ PRODUCT_PACKAGES += \
     datastatusnotification \
     embms \
     shutdownlistener \
-    CNEService \
     QtiTetherService \
-    com.qualcomm.location \
-    dpmserviceapp \
     qcrilmsgtunnel \
     colorservice \
-    ims \
     imssettings \
     qcnvitems \
     qcrilhook
