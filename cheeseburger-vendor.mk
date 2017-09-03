@@ -67,7 +67,6 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/cheeseburger/proprietary/etc/oneplus5_vstab_db_720p_video_1_30fps.config:system/etc/oneplus5_vstab_db_720p_video_1_30fps.config \
     vendor/oneplus/cheeseburger/proprietary/etc/sensors/hals.conf:system/etc/sensors/hals.conf \
     vendor/oneplus/cheeseburger/proprietary/etc/sensors/sensor_def_qcomdev.conf:system/etc/sensors/sensor_def_qcomdev.conf \
-    vendor/oneplus/cheeseburger/proprietary/lib/hw/camera.msm8998.so:system/lib/hw/camera.msm8998.so \
     vendor/oneplus/cheeseburger/proprietary/lib/libFNVfbEngineHAL.so:system/lib/libFNVfbEngineHAL.so \
     vendor/oneplus/cheeseburger/proprietary/lib/libSensorManagerHAL.so:system/lib/libSensorManagerHAL.so \
     vendor/oneplus/cheeseburger/proprietary/lib/libVDBlurlessAPI.so:system/lib/libVDBlurlessAPI.so \
@@ -75,8 +74,6 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/cheeseburger/proprietary/lib/lib_oneplus_facebeauty.so:system/lib/lib_oneplus_facebeauty.so \
     vendor/oneplus/cheeseburger/proprietary/lib/lib_oneplus_md.so:system/lib/lib_oneplus_md.so \
     vendor/oneplus/cheeseburger/proprietary/lib/lib_oneplus_watermark.so:system/lib/lib_oneplus_watermark.so \
-    vendor/oneplus/cheeseburger/proprietary/lib/libmmcamera_interface.so:system/lib/libmmcamera_interface.so \
-    vendor/oneplus/cheeseburger/proprietary/lib/libmmjpeg_interface.so:system/lib/libmmjpeg_interface.so \
     vendor/oneplus/cheeseburger/proprietary/lib/libmms_gyro_vstab.so:system/lib/libmms_gyro_vstab.so \
     vendor/oneplus/cheeseburger/proprietary/lib/libmms_gyro_vstab_auth.so:system/lib/libmms_gyro_vstab_auth.so \
     vendor/oneplus/cheeseburger/proprietary/lib/libmms_hal_vstab.so:system/lib/libmms_hal_vstab.so \
@@ -88,7 +85,6 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/cheeseburger/proprietary/lib/libopcamera_native_modules.so:system/lib/libopcamera_native_modules.so \
     vendor/oneplus/cheeseburger/proprietary/lib/libopcameralib.so:system/lib/libopcameralib.so \
     vendor/oneplus/cheeseburger/proprietary/lib/libopposfr.so:system/lib/libopposfr.so \
-    vendor/oneplus/cheeseburger/proprietary/lib/libqomx_core.so:system/lib/libqomx_core.so \
     vendor/oneplus/cheeseburger/proprietary/lib/libteeclientjni.so:system/lib/libteeclientjni.so \
     vendor/oneplus/cheeseburger/proprietary/lib/rfsa/adsp/libVDHexagonBlurless_skel.so:system/lib/rfsa/adsp/libVDHexagonBlurless_skel.so \
     vendor/oneplus/cheeseburger/proprietary/lib/rfsa/adsp/libmorpho_image_stabilizer4_hvx_skel.so:system/lib/rfsa/adsp/libmorpho_image_stabilizer4_hvx_skel.so \
@@ -343,10 +339,8 @@ ifeq ($(QCPATH),)
 PRODUCT_COPY_FILES += \
     vendor/oneplus/cheeseburger/proprietary/bin/adsprpcd:system/bin/adsprpcd \
     vendor/oneplus/cheeseburger/proprietary/bin/btnvtool:system/bin/btnvtool \
-    vendor/oneplus/cheeseburger/proprietary/bin/cnd:system/bin/cnd \
     vendor/oneplus/cheeseburger/proprietary/bin/cnss-daemon:system/bin/cnss-daemon \
     vendor/oneplus/cheeseburger/proprietary/bin/cnss_diag:system/bin/cnss_diag \
-    vendor/oneplus/cheeseburger/proprietary/bin/dpmd:system/bin/dpmd \
     vendor/oneplus/cheeseburger/proprietary/bin/energy-awareness:system/bin/energy-awareness \
     vendor/oneplus/cheeseburger/proprietary/bin/hci_qcomm_init:system/bin/hci_qcomm_init \
     vendor/oneplus/cheeseburger/proprietary/bin/ims_rtp_daemon:system/bin/ims_rtp_daemon \
@@ -514,6 +508,8 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib/libmm-qdcm.so:system/vendor/lib/libmm-qdcm.so \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib/libmmosal.so:system/vendor/lib/libmmosal.so \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib/libperipheral_client.so:system/vendor/lib/libperipheral_client.so \
+    vendor/oneplus/cheeseburger/proprietary/vendor/lib/libprotobuf-cpp-fulx.so:system/vendor/lib/libprotobuf-cpp-fulx.so \
+    vendor/oneplus/cheeseburger/proprietary/vendor/lib/libprotobuf-cpp-litx.so:system/vendor/lib/libprotobuf-cpp-litx.so \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib/libqcci_legacy.so:system/vendor/lib/libqcci_legacy.so \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib/libqdi.so:system/vendor/lib/libqdi.so \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib/libqdp.so:system/vendor/lib/libqdp.so \
@@ -693,6 +689,8 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib64/libpdmapper.so:system/vendor/lib64/libpdmapper.so \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib64/libpdnotifier.so:system/vendor/lib64/libpdnotifier.so \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib64/libperipheral_client.so:system/vendor/lib64/libperipheral_client.so \
+    vendor/oneplus/cheeseburger/proprietary/vendor/lib64/libprotobuf-cpp-fulx.so:system/vendor/lib64/libprotobuf-cpp-fulx.so \
+    vendor/oneplus/cheeseburger/proprietary/vendor/lib64/libprotobuf-cpp-litx.so:system/vendor/lib64/libprotobuf-cpp-litx.so \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib64/libqcci_legacy.so:system/vendor/lib64/libqcci_legacy.so \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib64/libqcmaputils.so:system/vendor/lib64/libqcmaputils.so \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib64/libqdi.so:system/vendor/lib64/libqdi.so \
