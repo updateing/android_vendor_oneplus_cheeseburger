@@ -31,6 +31,28 @@ LOCAL_PRIVILEGED_MODULE := true
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
+LOCAL_MODULE := SmartcardService
+LOCAL_MODULE_OWNER := oneplus
+LOCAL_SRC_FILES := proprietary/priv-app/SmartcardService/SmartcardService.apk
+LOCAL_CERTIFICATE := platform
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_CLASS := APPS
+LOCAL_DEX_PREOPT := false
+LOCAL_MODULE_SUFFIX := .apk
+LOCAL_PRIVILEGED_MODULE := true
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE := org.simalliance.openmobileapi
+LOCAL_MODULE_OWNER := oneplus
+LOCAL_SRC_FILES := proprietary/framework/org.simalliance.openmobileapi.jar
+LOCAL_CERTIFICATE := platform
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_CLASS := JAVA_LIBRARIES
+LOCAL_MODULE_SUFFIX := .jar
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
 LOCAL_MODULE := dashd
 LOCAL_MODULE_OWNER := oneplus
 LOCAL_MODULE_PATH := $(TARGET_ROOT_OUT_SBIN)
@@ -42,16 +64,6 @@ include $(BUILD_PREBUILT)
 
 
 ifeq ($(QCPATH),)
-include $(CLEAR_VARS)
-LOCAL_MODULE := libloc_api_v02
-LOCAL_MODULE_OWNER := oneplus
-LOCAL_SRC_FILES := proprietary/lib64/libloc_api_v02.so
-LOCAL_MULTILIB := 64
-LOCAL_MODULE_TAGS := optional
-LOCAL_MODULE_CLASS := SHARED_LIBRARIES
-LOCAL_MODULE_SUFFIX := .so
-include $(BUILD_PREBUILT)
-
 include $(CLEAR_VARS)
 LOCAL_MODULE := libbtnv
 LOCAL_MODULE_OWNER := oneplus
@@ -69,18 +81,6 @@ LOCAL_MODULE := libgpustats
 LOCAL_MODULE_OWNER := oneplus
 LOCAL_SRC_FILES_64 := proprietary/vendor/lib64/libgpustats.so
 LOCAL_SRC_FILES_32 := proprietary/vendor/lib/libgpustats.so
-LOCAL_MULTILIB := both
-LOCAL_MODULE_TAGS := optional
-LOCAL_MODULE_CLASS := SHARED_LIBRARIES
-LOCAL_MODULE_SUFFIX := .so
-LOCAL_PROPRIETARY_MODULE := true
-include $(BUILD_PREBUILT)
-
-include $(CLEAR_VARS)
-LOCAL_MODULE := libsdm-disp-apis
-LOCAL_MODULE_OWNER := oneplus
-LOCAL_SRC_FILES_64 := proprietary/vendor/lib64/libsdm-disp-apis.so
-LOCAL_SRC_FILES_32 := proprietary/vendor/lib/libsdm-disp-apis.so
 LOCAL_MULTILIB := both
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_CLASS := SHARED_LIBRARIES
@@ -113,20 +113,20 @@ LOCAL_PROPRIETARY_MODULE := true
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
-LOCAL_MODULE := QtiTelephonyService
+LOCAL_MODULE := libloc_api_v02
 LOCAL_MODULE_OWNER := oneplus
-LOCAL_SRC_FILES := proprietary/app/QtiTelephonyService/QtiTelephonyService.apk
-LOCAL_CERTIFICATE := platform
+LOCAL_SRC_FILES := proprietary/vendor/lib/libloc_api_v02.so
+LOCAL_MULTILIB := 32
 LOCAL_MODULE_TAGS := optional
-LOCAL_MODULE_CLASS := APPS
-LOCAL_DEX_PREOPT := false
-LOCAL_MODULE_SUFFIX := .apk
+LOCAL_MODULE_CLASS := SHARED_LIBRARIES
+LOCAL_MODULE_SUFFIX := .so
+LOCAL_PROPRIETARY_MODULE := true
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
-LOCAL_MODULE := TimeService
+LOCAL_MODULE := QtiTelephonyService
 LOCAL_MODULE_OWNER := oneplus
-LOCAL_SRC_FILES := proprietary/app/TimeService/TimeService.apk
+LOCAL_SRC_FILES := proprietary/app/QtiTelephonyService/QtiTelephonyService.apk
 LOCAL_CERTIFICATE := platform
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_CLASS := APPS
@@ -157,9 +157,31 @@ LOCAL_MODULE_SUFFIX := .apk
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
-LOCAL_MODULE := shutdownlistener
+LOCAL_MODULE := ims
 LOCAL_MODULE_OWNER := oneplus
-LOCAL_SRC_FILES := proprietary/app/shutdownlistener/shutdownlistener.apk
+LOCAL_SRC_FILES := proprietary/app/ims/ims.apk
+LOCAL_CERTIFICATE := platform
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_CLASS := APPS
+LOCAL_DEX_PREOPT := false
+LOCAL_MODULE_SUFFIX := .apk
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE := imssettings
+LOCAL_MODULE_OWNER := oneplus
+LOCAL_SRC_FILES := proprietary/app/imssettings/imssettings.apk
+LOCAL_CERTIFICATE := platform
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_CLASS := APPS
+LOCAL_DEX_PREOPT := false
+LOCAL_MODULE_SUFFIX := .apk
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE := radioconfig
+LOCAL_MODULE_OWNER := oneplus
+LOCAL_SRC_FILES := proprietary/app/radioconfig/radioconfig.apk
 LOCAL_CERTIFICATE := platform
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_CLASS := APPS
@@ -171,18 +193,6 @@ include $(CLEAR_VARS)
 LOCAL_MODULE := CNEService
 LOCAL_MODULE_OWNER := oneplus
 LOCAL_SRC_FILES := proprietary/priv-app/CNEService/CNEService.apk
-LOCAL_CERTIFICATE := platform
-LOCAL_MODULE_TAGS := optional
-LOCAL_MODULE_CLASS := APPS
-LOCAL_DEX_PREOPT := false
-LOCAL_MODULE_SUFFIX := .apk
-LOCAL_PRIVILEGED_MODULE := true
-include $(BUILD_PREBUILT)
-
-include $(CLEAR_VARS)
-LOCAL_MODULE := QtiTetherService
-LOCAL_MODULE_OWNER := oneplus
-LOCAL_SRC_FILES := proprietary/priv-app/QtiTetherService/QtiTetherService.apk
 LOCAL_CERTIFICATE := platform
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_CLASS := APPS
@@ -228,33 +238,21 @@ LOCAL_PRIVILEGED_MODULE := true
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
+LOCAL_MODULE := TimeService
+LOCAL_MODULE_OWNER := oneplus
+LOCAL_SRC_FILES := proprietary/vendor/app/TimeService/TimeService.apk
+LOCAL_CERTIFICATE := platform
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_CLASS := APPS
+LOCAL_DEX_PREOPT := false
+LOCAL_MODULE_SUFFIX := .apk
+LOCAL_PROPRIETARY_MODULE := true
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
 LOCAL_MODULE := colorservice
 LOCAL_MODULE_OWNER := oneplus
 LOCAL_SRC_FILES := proprietary/vendor/app/colorservice/colorservice.apk
-LOCAL_CERTIFICATE := platform
-LOCAL_MODULE_TAGS := optional
-LOCAL_MODULE_CLASS := APPS
-LOCAL_DEX_PREOPT := false
-LOCAL_MODULE_SUFFIX := .apk
-LOCAL_PROPRIETARY_MODULE := true
-include $(BUILD_PREBUILT)
-
-include $(CLEAR_VARS)
-LOCAL_MODULE := ims
-LOCAL_MODULE_OWNER := oneplus
-LOCAL_SRC_FILES := proprietary/vendor/app/ims/ims.apk
-LOCAL_CERTIFICATE := platform
-LOCAL_MODULE_TAGS := optional
-LOCAL_MODULE_CLASS := APPS
-LOCAL_DEX_PREOPT := false
-LOCAL_MODULE_SUFFIX := .apk
-LOCAL_PROPRIETARY_MODULE := true
-include $(BUILD_PREBUILT)
-
-include $(CLEAR_VARS)
-LOCAL_MODULE := imssettings
-LOCAL_MODULE_OWNER := oneplus
-LOCAL_SRC_FILES := proprietary/vendor/app/imssettings/imssettings.apk
 LOCAL_CERTIFICATE := platform
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_CLASS := APPS

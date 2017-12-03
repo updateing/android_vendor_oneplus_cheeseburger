@@ -16,30 +16,15 @@
 
 PRODUCT_COPY_FILES += \
     vendor/oneplus/cheeseburger/proprietary/bin/ifaadaemon:system/bin/ifaadaemon \
-    vendor/oneplus/cheeseburger/proprietary/bin/ipacm-diag:system/bin/ipacm-diag \
     vendor/oneplus/cheeseburger/proprietary/bin/mm-qcamera-daemon:system/bin/mm-qcamera-daemon \
-    vendor/oneplus/cheeseburger/proprietary/etc/GyroOffset_db.config:system/etc/GyroOffset_db.config \
-    vendor/oneplus/cheeseburger/proprietary/etc/acdbdata/MTP/MTP_Bluetooth_cal.acdb:system/etc/acdbdata/MTP/MTP_Bluetooth_cal.acdb \
-    vendor/oneplus/cheeseburger/proprietary/etc/acdbdata/MTP/MTP_General_cal.acdb:system/etc/acdbdata/MTP/MTP_General_cal.acdb \
-    vendor/oneplus/cheeseburger/proprietary/etc/acdbdata/MTP/MTP_Global_cal.acdb:system/etc/acdbdata/MTP/MTP_Global_cal.acdb \
-    vendor/oneplus/cheeseburger/proprietary/etc/acdbdata/MTP/MTP_Handset_cal.acdb:system/etc/acdbdata/MTP/MTP_Handset_cal.acdb \
-    vendor/oneplus/cheeseburger/proprietary/etc/acdbdata/MTP/MTP_Hdmi_cal.acdb:system/etc/acdbdata/MTP/MTP_Hdmi_cal.acdb \
-    vendor/oneplus/cheeseburger/proprietary/etc/acdbdata/MTP/MTP_Headset_cal.acdb:system/etc/acdbdata/MTP/MTP_Headset_cal.acdb \
-    vendor/oneplus/cheeseburger/proprietary/etc/acdbdata/MTP/MTP_Speaker_cal.acdb:system/etc/acdbdata/MTP/MTP_Speaker_cal.acdb \
-    vendor/oneplus/cheeseburger/proprietary/etc/acdbdata/MTP/MTP_workspaceFile.qwsp:system/etc/acdbdata/MTP/MTP_workspaceFile.qwsp \
-    vendor/oneplus/cheeseburger/proprietary/etc/acdbdata/adsp_avs_config.acdb:system/etc/acdbdata/adsp_avs_config.acdb \
+    vendor/oneplus/cheeseburger/proprietary/etc/camera/ashdr/iso617_4608x3456.ncf:system/etc/camera/ashdr/iso617_4608x3456.ncf \
+    vendor/oneplus/cheeseburger/proprietary/etc/camera/ashdr/ncf_pack.ncf:system/etc/camera/ashdr/ncf_pack.ncf \
+    vendor/oneplus/cheeseburger/proprietary/etc/camera/attribute.model:system/etc/camera/attribute.model \
     vendor/oneplus/cheeseburger/proprietary/etc/camera/cp/CPCalibrationData.bin:system/etc/camera/cp/CPCalibrationData.bin \
-    vendor/oneplus/cheeseburger/proprietary/etc/camera/cp/FusionCalibrationParams.bin:system/etc/camera/cp/FusionCalibrationParams.bin \
     vendor/oneplus/cheeseburger/proprietary/etc/camera/cp/SystemParamsBokeh.bin:system/etc/camera/cp/SystemParamsBokeh.bin \
     vendor/oneplus/cheeseburger/proprietary/etc/camera/cp/SystemParamsFusion.bin:system/etc/camera/cp/SystemParamsFusion.bin \
-    vendor/oneplus/cheeseburger/proprietary/etc/firmware/a530_pfp.fw:system/etc/firmware/a530_pfp.fw \
-    vendor/oneplus/cheeseburger/proprietary/etc/firmware/a530_pm4.fw:system/etc/firmware/a530_pm4.fw \
-    vendor/oneplus/cheeseburger/proprietary/etc/firmware/a540_gpmu.fw2:system/etc/firmware/a540_gpmu.fw2 \
-    vendor/oneplus/cheeseburger/proprietary/etc/firmware/a540_zap.b00:system/etc/firmware/a540_zap.b00 \
-    vendor/oneplus/cheeseburger/proprietary/etc/firmware/a540_zap.b01:system/etc/firmware/a540_zap.b01 \
-    vendor/oneplus/cheeseburger/proprietary/etc/firmware/a540_zap.b02:system/etc/firmware/a540_zap.b02 \
-    vendor/oneplus/cheeseburger/proprietary/etc/firmware/a540_zap.elf:system/etc/firmware/a540_zap.elf \
-    vendor/oneplus/cheeseburger/proprietary/etc/firmware/a540_zap.mdt:system/etc/firmware/a540_zap.mdt \
+    vendor/oneplus/cheeseburger/proprietary/etc/camera/cp/systemParams.bin:system/etc/camera/cp/systemParams.bin \
+    vendor/oneplus/cheeseburger/proprietary/etc/camera/license.lic:system/etc/camera/license.lic \
     vendor/oneplus/cheeseburger/proprietary/etc/firmware/cpp_firmware_v1_10_0.fw:system/etc/firmware/cpp_firmware_v1_10_0.fw \
     vendor/oneplus/cheeseburger/proprietary/etc/firmware/cpp_firmware_v1_12_0.fw:system/etc/firmware/cpp_firmware_v1_12_0.fw \
     vendor/oneplus/cheeseburger/proprietary/etc/firmware/cpp_firmware_v1_1_1.fw:system/etc/firmware/cpp_firmware_v1_1_1.fw \
@@ -47,70 +32,172 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/cheeseburger/proprietary/etc/firmware/cpp_firmware_v1_2_0.fw:system/etc/firmware/cpp_firmware_v1_2_0.fw \
     vendor/oneplus/cheeseburger/proprietary/etc/firmware/cpp_firmware_v1_4_0.fw:system/etc/firmware/cpp_firmware_v1_4_0.fw \
     vendor/oneplus/cheeseburger/proprietary/etc/firmware/cpp_firmware_v1_5_0.fw:system/etc/firmware/cpp_firmware_v1_5_0.fw \
+    vendor/oneplus/cheeseburger/proprietary/etc/firmware/cpp_firmware_v1_5_1.fw:system/etc/firmware/cpp_firmware_v1_5_1.fw \
     vendor/oneplus/cheeseburger/proprietary/etc/firmware/cpp_firmware_v1_5_2.fw:system/etc/firmware/cpp_firmware_v1_5_2.fw \
     vendor/oneplus/cheeseburger/proprietary/etc/firmware/cpp_firmware_v1_6_0.fw:system/etc/firmware/cpp_firmware_v1_6_0.fw \
     vendor/oneplus/cheeseburger/proprietary/etc/firmware/cpp_firmware_v1_8_0.fw:system/etc/firmware/cpp_firmware_v1_8_0.fw \
-    vendor/oneplus/cheeseburger/proprietary/etc/firmware/ipa_fws.b00:system/etc/firmware/ipa_fws.b00 \
-    vendor/oneplus/cheeseburger/proprietary/etc/firmware/ipa_fws.b01:system/etc/firmware/ipa_fws.b01 \
-    vendor/oneplus/cheeseburger/proprietary/etc/firmware/ipa_fws.b02:system/etc/firmware/ipa_fws.b02 \
-    vendor/oneplus/cheeseburger/proprietary/etc/firmware/ipa_fws.b03:system/etc/firmware/ipa_fws.b03 \
-    vendor/oneplus/cheeseburger/proprietary/etc/firmware/ipa_fws.b04:system/etc/firmware/ipa_fws.b04 \
-    vendor/oneplus/cheeseburger/proprietary/etc/firmware/ipa_fws.mdt:system/etc/firmware/ipa_fws.mdt \
-    vendor/oneplus/cheeseburger/proprietary/etc/firmware/mbn_ota/mbn_ota.txt:system/etc/firmware/mbn_ota/mbn_ota.txt \
     vendor/oneplus/cheeseburger/proprietary/etc/firmware/tfa98xx.cnt:system/etc/firmware/tfa98xx.cnt \
-    vendor/oneplus/cheeseburger/proprietary/etc/firmware/tp/fw_synaptics_15801.img:system/etc/firmware/tp/fw_synaptics_15801.img \
-    vendor/oneplus/cheeseburger/proprietary/etc/firmware/tp/fw_synaptics_15801b.img:system/etc/firmware/tp/fw_synaptics_15801b.img \
     vendor/oneplus/cheeseburger/proprietary/etc/firmware/tp/fw_synaptics_16859.img:system/etc/firmware/tp/fw_synaptics_16859.img \
-    vendor/oneplus/cheeseburger/proprietary/etc/fsync_db.config:system/etc/fsync_db.config \
-    vendor/oneplus/cheeseburger/proprietary/etc/oneplus5_vstab_db_1080p_video_0_30fps.config:system/etc/oneplus5_vstab_db_1080p_video_0_30fps.config \
-    vendor/oneplus/cheeseburger/proprietary/etc/oneplus5_vstab_db_1080p_video_0_60fps.config:system/etc/oneplus5_vstab_db_1080p_video_0_60fps.config \
-    vendor/oneplus/cheeseburger/proprietary/etc/oneplus5_vstab_db_1080p_video_1_30fps.config:system/etc/oneplus5_vstab_db_1080p_video_1_30fps.config \
-    vendor/oneplus/cheeseburger/proprietary/etc/oneplus5_vstab_db_4k_video_0_30fps.config:system/etc/oneplus5_vstab_db_4k_video_0_30fps.config \
-    vendor/oneplus/cheeseburger/proprietary/etc/oneplus5_vstab_db_720p_video_0_30fps.config:system/etc/oneplus5_vstab_db_720p_video_0_30fps.config \
-    vendor/oneplus/cheeseburger/proprietary/etc/oneplus5_vstab_db_720p_video_1_30fps.config:system/etc/oneplus5_vstab_db_720p_video_1_30fps.config \
-    vendor/oneplus/cheeseburger/proprietary/vendor/etc/sensors/hals.conf:system/vendor/etc/sensors/hals.conf \
-    vendor/oneplus/cheeseburger/proprietary/etc/sensors/sensor_def_qcomdev.conf:system/etc/sensors/sensor_def_qcomdev.conf \
-    vendor/oneplus/cheeseburger/proprietary/lib/hw/camera.msm8998.so:system/lib/hw/camera.msm8998.so \
-    vendor/oneplus/cheeseburger/proprietary/lib/libFNVfbEngineHAL.so:system/lib/libFNVfbEngineHAL.so \
+    vendor/oneplus/cheeseburger/proprietary/etc/permissions/com.fingerprints.extension.xml:system/etc/permissions/com.fingerprints.extension.xml \
+    vendor/oneplus/cheeseburger/proprietary/etc/permissions/org.simalliance.openmobileapi.xml:system/etc/permissions/org.simalliance.openmobileapi.xml \
+    vendor/oneplus/cheeseburger/proprietary/framework/com.fingerprints.extension.jar:system/framework/com.fingerprints.extension.jar \
+    vendor/oneplus/cheeseburger/proprietary/framework/vendor.qti.hardware.fingerprint-V1.0-java.jar:system/framework/vendor.qti.hardware.fingerprint-V1.0-java.jar \
+    vendor/oneplus/cheeseburger/proprietary/lib/hw/fingerprint.msm8998.so:system/lib/hw/fingerprint.msm8998.so \
     vendor/oneplus/cheeseburger/proprietary/lib/libSensorManagerHAL.so:system/lib/libSensorManagerHAL.so \
     vendor/oneplus/cheeseburger/proprietary/lib/libVDBlurlessAPI.so:system/lib/libVDBlurlessAPI.so \
     vendor/oneplus/cheeseburger/proprietary/lib/libVDHDRAPI.so:system/lib/libVDHDRAPI.so \
     vendor/oneplus/cheeseburger/proprietary/lib/lib_oneplus_facebeauty.so:system/lib/lib_oneplus_facebeauty.so \
     vendor/oneplus/cheeseburger/proprietary/lib/lib_oneplus_md.so:system/lib/lib_oneplus_md.so \
     vendor/oneplus/cheeseburger/proprietary/lib/lib_oneplus_watermark.so:system/lib/lib_oneplus_watermark.so \
-    vendor/oneplus/cheeseburger/proprietary/lib/libmmcamera_interface.so:system/lib/libmmcamera_interface.so \
-    vendor/oneplus/cheeseburger/proprietary/lib/libmmjpeg_interface.so:system/lib/libmmjpeg_interface.so \
+    vendor/oneplus/cheeseburger/proprietary/lib/libblurbuster.so:system/lib/libblurbuster.so \
+    vendor/oneplus/cheeseburger/proprietary/lib/libfiltergenerator.so:system/lib/libfiltergenerator.so \
+    vendor/oneplus/cheeseburger/proprietary/lib/libjni_blurbuster.so:system/lib/libjni_blurbuster.so \
+    vendor/oneplus/cheeseburger/proprietary/lib/libjni_chromaflash.so:system/lib/libjni_chromaflash.so \
+    vendor/oneplus/cheeseburger/proprietary/lib/libjni_dualcamera.so:system/lib/libjni_dualcamera.so \
+    vendor/oneplus/cheeseburger/proprietary/lib/libjni_filtergenerator.so:system/lib/libjni_filtergenerator.so \
+    vendor/oneplus/cheeseburger/proprietary/lib/libjni_hazebuster.so:system/lib/libjni_hazebuster.so \
+    vendor/oneplus/cheeseburger/proprietary/lib/libjni_makeupV2.so:system/lib/libjni_makeupV2.so \
+    vendor/oneplus/cheeseburger/proprietary/lib/libjni_optizoom.so:system/lib/libjni_optizoom.so \
+    vendor/oneplus/cheeseburger/proprietary/lib/libjni_panorama.so:system/lib/libjni_panorama.so \
+    vendor/oneplus/cheeseburger/proprietary/lib/libjni_seestraight.so:system/lib/libjni_seestraight.so \
+    vendor/oneplus/cheeseburger/proprietary/lib/libjni_sharpshooter.so:system/lib/libjni_sharpshooter.so \
+    vendor/oneplus/cheeseburger/proprietary/lib/libjni_stillmore.so:system/lib/libjni_stillmore.so \
+    vendor/oneplus/cheeseburger/proprietary/lib/libjni_trackingfocus.so:system/lib/libjni_trackingfocus.so \
+    vendor/oneplus/cheeseburger/proprietary/lib/libjni_trueportrait.so:system/lib/libjni_trueportrait.so \
+    vendor/oneplus/cheeseburger/proprietary/lib/libjni_truescanner_v2.so:system/lib/libjni_truescanner_v2.so \
+    vendor/oneplus/cheeseburger/proprietary/lib/libjni_ubifocus.so:system/lib/libjni_ubifocus.so \
+    vendor/oneplus/cheeseburger/proprietary/lib/libmm-qcamera.so:system/lib/libmm-qcamera.so \
     vendor/oneplus/cheeseburger/proprietary/lib/libmms_gyro_vstab.so:system/lib/libmms_gyro_vstab.so \
     vendor/oneplus/cheeseburger/proprietary/lib/libmms_gyro_vstab_auth.so:system/lib/libmms_gyro_vstab_auth.so \
     vendor/oneplus/cheeseburger/proprietary/lib/libmms_hal_vstab.so:system/lib/libmms_hal_vstab.so \
     vendor/oneplus/cheeseburger/proprietary/lib/libmms_warper_vstab.so:system/lib/libmms_warper_vstab.so \
     vendor/oneplus/cheeseburger/proprietary/lib/libmorpho_image_stab4.so:system/lib/libmorpho_image_stab4.so \
     vendor/oneplus/cheeseburger/proprietary/lib/libmorpho_video_refiner.so:system/lib/libmorpho_video_refiner.so \
-    vendor/oneplus/cheeseburger/proprietary/lib/libopcamera.so:system/lib/libopcamera.so \
     vendor/oneplus/cheeseburger/proprietary/lib/libopcamera_crypt.so:system/lib/libopcamera_crypt.so \
     vendor/oneplus/cheeseburger/proprietary/lib/libopcamera_native_modules.so:system/lib/libopcamera_native_modules.so \
-    vendor/oneplus/cheeseburger/proprietary/lib/libopcameralib.so:system/lib/libopcameralib.so \
     vendor/oneplus/cheeseburger/proprietary/lib/libopposfr.so:system/lib/libopposfr.so \
-    vendor/oneplus/cheeseburger/proprietary/lib/libqomx_core.so:system/lib/libqomx_core.so \
+    vendor/oneplus/cheeseburger/proprietary/lib/libscveBlobDescriptor.so:system/lib/libscveBlobDescriptor.so \
+    vendor/oneplus/cheeseburger/proprietary/lib/libscveBlobDescriptor_skel.so:system/lib/libscveBlobDescriptor_skel.so \
+    vendor/oneplus/cheeseburger/proprietary/lib/libscveBlobDescriptor_stub.so:system/lib/libscveBlobDescriptor_stub.so \
+    vendor/oneplus/cheeseburger/proprietary/lib/libscveCommon.so:system/lib/libscveCommon.so \
+    vendor/oneplus/cheeseburger/proprietary/lib/libscveCommon_stub.so:system/lib/libscveCommon_stub.so \
+    vendor/oneplus/cheeseburger/proprietary/lib/libscveFaceLandmark_skel.so:system/lib/libscveFaceLandmark_skel.so \
+    vendor/oneplus/cheeseburger/proprietary/lib/libscveFaceLandmarks.so:system/lib/libscveFaceLandmarks.so \
+    vendor/oneplus/cheeseburger/proprietary/lib/libscveFaceLandmarks_stub.so:system/lib/libscveFaceLandmarks_stub.so \
+    vendor/oneplus/cheeseburger/proprietary/lib/libscveFaceRecognition.so:system/lib/libscveFaceRecognition.so \
+    vendor/oneplus/cheeseburger/proprietary/lib/libscveImageCorrection.so:system/lib/libscveImageCorrection.so \
+    vendor/oneplus/cheeseburger/proprietary/lib/libscveObjectSegmentation.so:system/lib/libscveObjectSegmentation.so \
+    vendor/oneplus/cheeseburger/proprietary/lib/libscveObjectTracker.so:system/lib/libscveObjectTracker.so \
+    vendor/oneplus/cheeseburger/proprietary/lib/libscveObjectTracker_stub.so:system/lib/libscveObjectTracker_stub.so \
+    vendor/oneplus/cheeseburger/proprietary/lib/libscvePanorama.so:system/lib/libscvePanorama.so \
+    vendor/oneplus/cheeseburger/proprietary/lib/libscvePanorama_lite.so:system/lib/libscvePanorama_lite.so \
+    vendor/oneplus/cheeseburger/proprietary/lib/libscveT2T_skel.so:system/lib/libscveT2T_skel.so \
+    vendor/oneplus/cheeseburger/proprietary/lib/libstagefright_soft_flacdec.so:system/lib/libstagefright_soft_flacdec.so \
     vendor/oneplus/cheeseburger/proprietary/lib/libteeclientjni.so:system/lib/libteeclientjni.so \
+    vendor/oneplus/cheeseburger/proprietary/lib/libtrueportrait.so:system/lib/libtrueportrait.so \
     vendor/oneplus/cheeseburger/proprietary/lib/rfsa/adsp/libVDHexagonBlurless_skel.so:system/lib/rfsa/adsp/libVDHexagonBlurless_skel.so \
+    vendor/oneplus/cheeseburger/proprietary/lib/rfsa/adsp/libdepthmap_skel.so:system/lib/rfsa/adsp/libdepthmap_skel.so \
     vendor/oneplus/cheeseburger/proprietary/lib/rfsa/adsp/libmorpho_image_stabilizer4_hvx_skel.so:system/lib/rfsa/adsp/libmorpho_image_stabilizer4_hvx_skel.so \
     vendor/oneplus/cheeseburger/proprietary/lib/rfsa/adsp/libmorpho_video_denoiser_hvx_skel.so:system/lib/rfsa/adsp/libmorpho_video_denoiser_hvx_skel.so \
+    vendor/oneplus/cheeseburger/proprietary/lib/rfsa/adsp/libsns_low_lat_stream_skel.so:system/lib/rfsa/adsp/libsns_low_lat_stream_skel.so \
+    vendor/oneplus/cheeseburger/proprietary/lib/rfsa/adsp/libthread_blur_skel.so:system/lib/rfsa/adsp/libthread_blur_skel.so \
+    vendor/oneplus/cheeseburger/proprietary/lib/sensors.hal.tof.so:system/lib/sensors.hal.tof.so \
     vendor/oneplus/cheeseburger/proprietary/lib64/hw/fingerprint.msm8998.so:system/lib64/hw/fingerprint.msm8998.so \
-    vendor/oneplus/cheeseburger/proprietary/lib64/lib_fpc_tac_shared.so:system/lib64/lib_fpc_tac_shared.so \
+    vendor/oneplus/cheeseburger/proprietary/lib64/libblurbuster.so:system/lib64/libblurbuster.so \
+    vendor/oneplus/cheeseburger/proprietary/lib64/libfiltergenerator.so:system/lib64/libfiltergenerator.so \
+    vendor/oneplus/cheeseburger/proprietary/lib64/libjni_blurbuster.so:system/lib64/libjni_blurbuster.so \
+    vendor/oneplus/cheeseburger/proprietary/lib64/libjni_chromaflash.so:system/lib64/libjni_chromaflash.so \
+    vendor/oneplus/cheeseburger/proprietary/lib64/libjni_clearsight.so:system/lib64/libjni_clearsight.so \
+    vendor/oneplus/cheeseburger/proprietary/lib64/libjni_dualcamera.so:system/lib64/libjni_dualcamera.so \
+    vendor/oneplus/cheeseburger/proprietary/lib64/libjni_filtergenerator.so:system/lib64/libjni_filtergenerator.so \
+    vendor/oneplus/cheeseburger/proprietary/lib64/libjni_hazebuster.so:system/lib64/libjni_hazebuster.so \
+    vendor/oneplus/cheeseburger/proprietary/lib64/libjni_makeupV2.so:system/lib64/libjni_makeupV2.so \
+    vendor/oneplus/cheeseburger/proprietary/lib64/libjni_optizoom.so:system/lib64/libjni_optizoom.so \
+    vendor/oneplus/cheeseburger/proprietary/lib64/libjni_pacprocessor.so:system/lib64/libjni_pacprocessor.so \
+    vendor/oneplus/cheeseburger/proprietary/lib64/libjni_panorama.so:system/lib64/libjni_panorama.so \
+    vendor/oneplus/cheeseburger/proprietary/lib64/libjni_seestraight.so:system/lib64/libjni_seestraight.so \
+    vendor/oneplus/cheeseburger/proprietary/lib64/libjni_sharpshooter.so:system/lib64/libjni_sharpshooter.so \
+    vendor/oneplus/cheeseburger/proprietary/lib64/libjni_stillmore.so:system/lib64/libjni_stillmore.so \
+    vendor/oneplus/cheeseburger/proprietary/lib64/libjni_trackingfocus.so:system/lib64/libjni_trackingfocus.so \
+    vendor/oneplus/cheeseburger/proprietary/lib64/libjni_trueportrait.so:system/lib64/libjni_trueportrait.so \
+    vendor/oneplus/cheeseburger/proprietary/lib64/libjni_truescanner_v2.so:system/lib64/libjni_truescanner_v2.so \
+    vendor/oneplus/cheeseburger/proprietary/lib64/libjni_ubifocus.so:system/lib64/libjni_ubifocus.so \
     vendor/oneplus/cheeseburger/proprietary/lib64/libparam.so:system/lib64/libparam.so \
+    vendor/oneplus/cheeseburger/proprietary/lib64/libscveBlobDescriptor.so:system/lib64/libscveBlobDescriptor.so \
+    vendor/oneplus/cheeseburger/proprietary/lib64/libscveBlobDescriptor_stub.so:system/lib64/libscveBlobDescriptor_stub.so \
+    vendor/oneplus/cheeseburger/proprietary/lib64/libscveCommon.so:system/lib64/libscveCommon.so \
+    vendor/oneplus/cheeseburger/proprietary/lib64/libscveCommon_stub.so:system/lib64/libscveCommon_stub.so \
+    vendor/oneplus/cheeseburger/proprietary/lib64/libscveFaceLandmarks.so:system/lib64/libscveFaceLandmarks.so \
+    vendor/oneplus/cheeseburger/proprietary/lib64/libscveFaceLandmarks_stub.so:system/lib64/libscveFaceLandmarks_stub.so \
+    vendor/oneplus/cheeseburger/proprietary/lib64/libscveFaceRecognition.so:system/lib64/libscveFaceRecognition.so \
+    vendor/oneplus/cheeseburger/proprietary/lib64/libscveImageCorrection.so:system/lib64/libscveImageCorrection.so \
+    vendor/oneplus/cheeseburger/proprietary/lib64/libscveObjectSegmentation.so:system/lib64/libscveObjectSegmentation.so \
+    vendor/oneplus/cheeseburger/proprietary/lib64/libscveObjectTracker.so:system/lib64/libscveObjectTracker.so \
+    vendor/oneplus/cheeseburger/proprietary/lib64/libscveObjectTracker_stub.so:system/lib64/libscveObjectTracker_stub.so \
+    vendor/oneplus/cheeseburger/proprietary/lib64/libscvePanorama.so:system/lib64/libscvePanorama.so \
+    vendor/oneplus/cheeseburger/proprietary/lib64/libscvePanorama_lite.so:system/lib64/libscvePanorama_lite.so \
+    vendor/oneplus/cheeseburger/proprietary/lib64/libstagefright_soft_flacdec.so:system/lib64/libstagefright_soft_flacdec.so \
     vendor/oneplus/cheeseburger/proprietary/lib64/libteeclientjni.so:system/lib64/libteeclientjni.so \
     vendor/oneplus/cheeseburger/proprietary/lib64/libteeclientjniv2.so:system/lib64/libteeclientjniv2.so \
+    vendor/oneplus/cheeseburger/proprietary/lib64/libtrueportrait.so:system/lib64/libtrueportrait.so \
+    vendor/oneplus/cheeseburger/proprietary/lib64/sensors.hal.tof.so:system/lib64/sensors.hal.tof.so \
+    vendor/oneplus/cheeseburger/proprietary/vendor/bin/hvdcp_opti:system/vendor/bin/hvdcp_opti \
+    vendor/oneplus/cheeseburger/proprietary/vendor/bin/ipacm-diag:system/vendor/bin/ipacm-diag \
+    vendor/oneplus/cheeseburger/proprietary/vendor/bin/qvop-daemon:system/vendor/bin/qvop-daemon \
+    vendor/oneplus/cheeseburger/proprietary/vendor/etc/acdbdata/MTP/MTP_Bluetooth_cal.acdb:system/vendor/etc/acdbdata/MTP/MTP_Bluetooth_cal.acdb \
+    vendor/oneplus/cheeseburger/proprietary/vendor/etc/acdbdata/MTP/MTP_General_cal.acdb:system/vendor/etc/acdbdata/MTP/MTP_General_cal.acdb \
+    vendor/oneplus/cheeseburger/proprietary/vendor/etc/acdbdata/MTP/MTP_Global_cal.acdb:system/vendor/etc/acdbdata/MTP/MTP_Global_cal.acdb \
+    vendor/oneplus/cheeseburger/proprietary/vendor/etc/acdbdata/MTP/MTP_Handset_cal.acdb:system/vendor/etc/acdbdata/MTP/MTP_Handset_cal.acdb \
+    vendor/oneplus/cheeseburger/proprietary/vendor/etc/acdbdata/MTP/MTP_Hdmi_cal.acdb:system/vendor/etc/acdbdata/MTP/MTP_Hdmi_cal.acdb \
+    vendor/oneplus/cheeseburger/proprietary/vendor/etc/acdbdata/MTP/MTP_Headset_cal.acdb:system/vendor/etc/acdbdata/MTP/MTP_Headset_cal.acdb \
+    vendor/oneplus/cheeseburger/proprietary/vendor/etc/acdbdata/MTP/MTP_Speaker_cal.acdb:system/vendor/etc/acdbdata/MTP/MTP_Speaker_cal.acdb \
+    vendor/oneplus/cheeseburger/proprietary/vendor/etc/acdbdata/adsp_avs_config.acdb:system/vendor/etc/acdbdata/adsp_avs_config.acdb \
+    vendor/oneplus/cheeseburger/proprietary/vendor/etc/camera/camera_config.xml:system/vendor/etc/camera/camera_config.xml \
+    vendor/oneplus/cheeseburger/proprietary/vendor/etc/camera/imx350_chromatix.xml:system/vendor/etc/camera/imx350_chromatix.xml \
+    vendor/oneplus/cheeseburger/proprietary/vendor/etc/camera/imx371_chromatix.xml:system/vendor/etc/camera/imx371_chromatix.xml \
+    vendor/oneplus/cheeseburger/proprietary/vendor/etc/camera/imx376k_chromatix.xml:system/vendor/etc/camera/imx376k_chromatix.xml \
+    vendor/oneplus/cheeseburger/proprietary/vendor/etc/camera/imx398_chromatix.xml:system/vendor/etc/camera/imx398_chromatix.xml \
+    vendor/oneplus/cheeseburger/proprietary/vendor/etc/hbtp/hbtpcfg.dat:system/vendor/etc/hbtp/hbtpcfg.dat \
+    vendor/oneplus/cheeseburger/proprietary/vendor/etc/hbtp/hbtpcfg2.dat:system/vendor/etc/hbtp/hbtpcfg2.dat \
+    vendor/oneplus/cheeseburger/proprietary/vendor/etc/qvop/antispoofing.bin:system/vendor/etc/qvop/antispoofing.bin \
+    vendor/oneplus/cheeseburger/proprietary/vendor/etc/qvop/cmudict.bin:system/vendor/etc/qvop/cmudict.bin \
+    vendor/oneplus/cheeseburger/proprietary/vendor/etc/qvop/noisesample.bin:system/vendor/etc/qvop/noisesample.bin \
+    vendor/oneplus/cheeseburger/proprietary/vendor/etc/qvop/poc_64_hmm.gmm:system/vendor/etc/qvop/poc_64_hmm.gmm \
+    vendor/oneplus/cheeseburger/proprietary/vendor/etc/sensors/hals.conf:system/vendor/etc/sensors/hals.conf \
+    vendor/oneplus/cheeseburger/proprietary/vendor/etc/sensors/sensor_def_qcomdev.conf:system/vendor/etc/sensors/sensor_def_qcomdev.conf \
+    vendor/oneplus/cheeseburger/proprietary/vendor/firmware/a530_pfp.fw:system/vendor/firmware/a530_pfp.fw \
+    vendor/oneplus/cheeseburger/proprietary/vendor/firmware/a530_pm4.fw:system/vendor/firmware/a530_pm4.fw \
+    vendor/oneplus/cheeseburger/proprietary/vendor/firmware/a540_gpmu.fw2:system/vendor/firmware/a540_gpmu.fw2 \
+    vendor/oneplus/cheeseburger/proprietary/vendor/firmware/a540_zap.b00:system/vendor/firmware/a540_zap.b00 \
+    vendor/oneplus/cheeseburger/proprietary/vendor/firmware/a540_zap.b01:system/vendor/firmware/a540_zap.b01 \
+    vendor/oneplus/cheeseburger/proprietary/vendor/firmware/a540_zap.b02:system/vendor/firmware/a540_zap.b02 \
+    vendor/oneplus/cheeseburger/proprietary/vendor/firmware/a540_zap.elf:system/vendor/firmware/a540_zap.elf \
+    vendor/oneplus/cheeseburger/proprietary/vendor/firmware/a540_zap.mdt:system/vendor/firmware/a540_zap.mdt \
+    vendor/oneplus/cheeseburger/proprietary/vendor/firmware/ipa_fws.b00:system/vendor/firmware/ipa_fws.b00 \
+    vendor/oneplus/cheeseburger/proprietary/vendor/firmware/ipa_fws.b01:system/vendor/firmware/ipa_fws.b01 \
+    vendor/oneplus/cheeseburger/proprietary/vendor/firmware/ipa_fws.b02:system/vendor/firmware/ipa_fws.b02 \
+    vendor/oneplus/cheeseburger/proprietary/vendor/firmware/ipa_fws.b03:system/vendor/firmware/ipa_fws.b03 \
+    vendor/oneplus/cheeseburger/proprietary/vendor/firmware/ipa_fws.b04:system/vendor/firmware/ipa_fws.b04 \
+    vendor/oneplus/cheeseburger/proprietary/vendor/firmware/ipa_fws.elf:system/vendor/firmware/ipa_fws.elf \
+    vendor/oneplus/cheeseburger/proprietary/vendor/firmware/ipa_fws.mdt:system/vendor/firmware/ipa_fws.mdt \
+    vendor/oneplus/cheeseburger/proprietary/vendor/firmware/leia_pfp_470.fw:system/vendor/firmware/leia_pfp_470.fw \
+    vendor/oneplus/cheeseburger/proprietary/vendor/firmware/leia_pm4_470.fw:system/vendor/firmware/leia_pm4_470.fw \
     vendor/oneplus/cheeseburger/proprietary/vendor/firmware/libpn553_fw.so:system/vendor/firmware/libpn553_fw.so \
+    vendor/oneplus/cheeseburger/proprietary/vendor/framework/vendor.qti.hardware.sensorscalibrate-V1.0-java.jar:system/vendor/framework/vendor.qti.hardware.sensorscalibrate-V1.0-java.jar \
+    vendor/oneplus/cheeseburger/proprietary/vendor/lib/hw/camera.msm8998.so:system/vendor/lib/hw/camera.msm8998.so \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib/libSonyIMX350PdafLibrary.so:system/vendor/lib/libSonyIMX350PdafLibrary.so \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib/libSonyIMX371RmscLibrary.so:system/vendor/lib/libSonyIMX371RmscLibrary.so \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib/libStDualCam.so:system/vendor/lib/libStDualCam.so \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib/libStereoblur.so:system/vendor/lib/libStereoblur.so \
+    vendor/oneplus/cheeseburger/proprietary/vendor/lib/libVDDualCameraBlurlessAPI.so:system/vendor/lib/libVDDualCameraBlurlessAPI.so \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib/libactuator_lc898217xc_imx350.so:system/vendor/lib/libactuator_lc898217xc_imx350.so \
+    vendor/oneplus/cheeseburger/proprietary/vendor/lib/libactuator_lc898217xc_imx376k.so:system/vendor/lib/libactuator_lc898217xc_imx376k.so \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib/libactuator_lc898217xc_imx398.so:system/vendor/lib/libactuator_lc898217xc_imx398.so \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib/libarcsoft_dualcam_refocus.so:system/vendor/lib/libarcsoft_dualcam_refocus.so \
-    vendor/oneplus/cheeseburger/proprietary/vendor/lib/libblurbuster.so:system/vendor/lib/libblurbuster.so \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib/libcamera_bokeh_wrapper.so:system/vendor/lib/libcamera_bokeh_wrapper.so \
+    vendor/oneplus/cheeseburger/proprietary/vendor/lib/libcamera_cp_bokeh.so:system/vendor/lib/libcamera_cp_bokeh.so \
+    vendor/oneplus/cheeseburger/proprietary/vendor/lib/libcamera_cp_wrapper.so:system/vendor/lib/libcamera_cp_wrapper.so \
+    vendor/oneplus/cheeseburger/proprietary/vendor/lib/libcamera_oneplus_bokeh_wrapper.so:system/vendor/lib/libcamera_oneplus_bokeh_wrapper.so \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib/libcdsprpc.so:system/vendor/lib/libcdsprpc.so \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib/libchromaflash.so:system/vendor/lib/libchromaflash.so \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib/libchromatix_imx350_3a_1536x866_30fps_video.so:system/vendor/lib/libchromatix_imx350_3a_1536x866_30fps_video.so \
@@ -140,6 +227,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib/libchromatix_imx371_3a_2304x1728_30fps_preview.so:system/vendor/lib/libchromatix_imx371_3a_2304x1728_30fps_preview.so \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib/libchromatix_imx371_3a_2304x1728_30fps_video.so:system/vendor/lib/libchromatix_imx371_3a_2304x1728_30fps_video.so \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib/libchromatix_imx371_3a_4656x3456_30fps_preview.so:system/vendor/lib/libchromatix_imx371_3a_4656x3456_30fps_preview.so \
+    vendor/oneplus/cheeseburger/proprietary/vendor/lib/libchromatix_imx371_3a_640x480_120fps_video.so:system/vendor/lib/libchromatix_imx371_3a_640x480_120fps_video.so \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib/libchromatix_imx371_common.so:system/vendor/lib/libchromatix_imx371_common.so \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib/libchromatix_imx371_cpp_2304x1728_30fps_flash.so:system/vendor/lib/libchromatix_imx371_cpp_2304x1728_30fps_flash.so \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib/libchromatix_imx371_cpp_2304x1728_30fps_hdr.so:system/vendor/lib/libchromatix_imx371_cpp_2304x1728_30fps_hdr.so \
@@ -148,10 +236,31 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib/libchromatix_imx371_cpp_2304x1728_30fps_snapshot.so:system/vendor/lib/libchromatix_imx371_cpp_2304x1728_30fps_snapshot.so \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib/libchromatix_imx371_cpp_2304x1728_30fps_video.so:system/vendor/lib/libchromatix_imx371_cpp_2304x1728_30fps_video.so \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib/libchromatix_imx371_cpp_4656x3456_30fps_snapshot.so:system/vendor/lib/libchromatix_imx371_cpp_4656x3456_30fps_snapshot.so \
+    vendor/oneplus/cheeseburger/proprietary/vendor/lib/libchromatix_imx371_cpp_640x480_120fps_video.so:system/vendor/lib/libchromatix_imx371_cpp_640x480_120fps_video.so \
+    vendor/oneplus/cheeseburger/proprietary/vendor/lib/libchromatix_imx371_cpp_640x480_30fps_video.so:system/vendor/lib/libchromatix_imx371_cpp_640x480_30fps_video.so \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib/libchromatix_imx371_isp_2304x1728_30fps_snapshot.so:system/vendor/lib/libchromatix_imx371_isp_2304x1728_30fps_snapshot.so \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib/libchromatix_imx371_isp_2304x1728_30fps_video.so:system/vendor/lib/libchromatix_imx371_isp_2304x1728_30fps_video.so \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib/libchromatix_imx371_isp_4656x3456_30fps_snapshot.so:system/vendor/lib/libchromatix_imx371_isp_4656x3456_30fps_snapshot.so \
+    vendor/oneplus/cheeseburger/proprietary/vendor/lib/libchromatix_imx371_isp_640x480_120fps_video.so:system/vendor/lib/libchromatix_imx371_isp_640x480_120fps_video.so \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib/libchromatix_imx371_postproc.so:system/vendor/lib/libchromatix_imx371_postproc.so \
+    vendor/oneplus/cheeseburger/proprietary/vendor/lib/libchromatix_imx376k_3a_1840x1380_30fps_preview_bokeh.so:system/vendor/lib/libchromatix_imx376k_3a_1840x1380_30fps_preview_bokeh.so \
+    vendor/oneplus/cheeseburger/proprietary/vendor/lib/libchromatix_imx376k_3a_2592x1458_120fps_video.so:system/vendor/lib/libchromatix_imx376k_3a_2592x1458_120fps_video.so \
+    vendor/oneplus/cheeseburger/proprietary/vendor/lib/libchromatix_imx376k_3a_2592x1458_60fps_video.so:system/vendor/lib/libchromatix_imx376k_3a_2592x1458_60fps_video.so \
+    vendor/oneplus/cheeseburger/proprietary/vendor/lib/libchromatix_imx376k_3a_2592x1940_30fps_preview.so:system/vendor/lib/libchromatix_imx376k_3a_2592x1940_30fps_preview.so \
+    vendor/oneplus/cheeseburger/proprietary/vendor/lib/libchromatix_imx376k_3a_2592x1940_30fps_preview_bokeh.so:system/vendor/lib/libchromatix_imx376k_3a_2592x1940_30fps_preview_bokeh.so \
+    vendor/oneplus/cheeseburger/proprietary/vendor/lib/libchromatix_imx376k_3a_2592x1940_30fps_preview_wechat.so:system/vendor/lib/libchromatix_imx376k_3a_2592x1940_30fps_preview_wechat.so \
+    vendor/oneplus/cheeseburger/proprietary/vendor/lib/libchromatix_imx376k_common.so:system/vendor/lib/libchromatix_imx376k_common.so \
+    vendor/oneplus/cheeseburger/proprietary/vendor/lib/libchromatix_imx376k_cpp_2592x1458_120fps_video.so:system/vendor/lib/libchromatix_imx376k_cpp_2592x1458_120fps_video.so \
+    vendor/oneplus/cheeseburger/proprietary/vendor/lib/libchromatix_imx376k_cpp_2592x1458_60fps_video.so:system/vendor/lib/libchromatix_imx376k_cpp_2592x1458_60fps_video.so \
+    vendor/oneplus/cheeseburger/proprietary/vendor/lib/libchromatix_imx376k_cpp_2592x1940_24fps_preview_bokeh.so:system/vendor/lib/libchromatix_imx376k_cpp_2592x1940_24fps_preview_bokeh.so \
+    vendor/oneplus/cheeseburger/proprietary/vendor/lib/libchromatix_imx376k_cpp_2592x1940_24fps_snapshot_bokeh.so:system/vendor/lib/libchromatix_imx376k_cpp_2592x1940_24fps_snapshot_bokeh.so \
+    vendor/oneplus/cheeseburger/proprietary/vendor/lib/libchromatix_imx376k_cpp_2592x1940_30fps_preview.so:system/vendor/lib/libchromatix_imx376k_cpp_2592x1940_30fps_preview.so \
+    vendor/oneplus/cheeseburger/proprietary/vendor/lib/libchromatix_imx376k_cpp_2592x1940_30fps_snapshot.so:system/vendor/lib/libchromatix_imx376k_cpp_2592x1940_30fps_snapshot.so \
+    vendor/oneplus/cheeseburger/proprietary/vendor/lib/libchromatix_imx376k_isp_2592x1458_120fps_video.so:system/vendor/lib/libchromatix_imx376k_isp_2592x1458_120fps_video.so \
+    vendor/oneplus/cheeseburger/proprietary/vendor/lib/libchromatix_imx376k_isp_2592x1458_60fps_video.so:system/vendor/lib/libchromatix_imx376k_isp_2592x1458_60fps_video.so \
+    vendor/oneplus/cheeseburger/proprietary/vendor/lib/libchromatix_imx376k_isp_2592x1940_24fps_snapshot_bokeh.so:system/vendor/lib/libchromatix_imx376k_isp_2592x1940_24fps_snapshot_bokeh.so \
+    vendor/oneplus/cheeseburger/proprietary/vendor/lib/libchromatix_imx376k_isp_2592x1940_30fps_snapshot.so:system/vendor/lib/libchromatix_imx376k_isp_2592x1940_30fps_snapshot.so \
+    vendor/oneplus/cheeseburger/proprietary/vendor/lib/libchromatix_imx376k_postproc.so:system/vendor/lib/libchromatix_imx376k_postproc.so \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib/libchromatix_imx398_3a_1476x834_120fps_video.so:system/vendor/lib/libchromatix_imx398_3a_1476x834_120fps_video.so \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib/libchromatix_imx398_3a_2328x1304_60fps_video.so:system/vendor/lib/libchromatix_imx398_3a_2328x1304_60fps_video.so \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib/libchromatix_imx398_3a_3264x2448_24fps_preview_bokeh.so:system/vendor/lib/libchromatix_imx398_3a_3264x2448_24fps_preview_bokeh.so \
@@ -177,7 +286,9 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib/libchromatix_imx398_cpp_snapshot_flash.so:system/vendor/lib/libchromatix_imx398_cpp_snapshot_flash.so \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib/libchromatix_imx398_cpp_snapshot_hdr.so:system/vendor/lib/libchromatix_imx398_cpp_snapshot_hdr.so \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib/libchromatix_imx398_cpp_snapshot_manual.so:system/vendor/lib/libchromatix_imx398_cpp_snapshot_manual.so \
+    vendor/oneplus/cheeseburger/proprietary/vendor/lib/libchromatix_imx398_cpp_snapshot_motion.so:system/vendor/lib/libchromatix_imx398_cpp_snapshot_motion.so \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib/libchromatix_imx398_cpp_snapshot_nomultiframe.so:system/vendor/lib/libchromatix_imx398_cpp_snapshot_nomultiframe.so \
+    vendor/oneplus/cheeseburger/proprietary/vendor/lib/libchromatix_imx398_cpp_snapshot_zoom.so:system/vendor/lib/libchromatix_imx398_cpp_snapshot_zoom.so \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib/libchromatix_imx398_isp_1476x834_120fps_video.so:system/vendor/lib/libchromatix_imx398_isp_1476x834_120fps_video.so \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib/libchromatix_imx398_isp_2328x1304_60fps_video.so:system/vendor/lib/libchromatix_imx398_isp_2328x1304_60fps_video.so \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib/libchromatix_imx398_isp_3264x2448_30fps_snapshot_bokeh.so:system/vendor/lib/libchromatix_imx398_isp_3264x2448_30fps_snapshot_bokeh.so \
@@ -192,20 +303,8 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib/libcvface_api.so:system/vendor/lib/libcvface_api.so \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib/libdczoom.so:system/vendor/lib/libdczoom.so \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib/libdualcameraddm.so:system/vendor/lib/libdualcameraddm.so \
-    vendor/oneplus/cheeseburger/proprietary/vendor/lib/libfiltergenerator.so:system/vendor/lib/libfiltergenerator.so \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib/libflash_pmic.so:system/vendor/lib/libflash_pmic.so \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib/libfusionLibrary.so:system/vendor/lib/libfusionLibrary.so \
-    vendor/oneplus/cheeseburger/proprietary/vendor/lib/libjni_blurbuster.so:system/vendor/lib/libjni_blurbuster.so \
-    vendor/oneplus/cheeseburger/proprietary/vendor/lib/libjni_chromaflash.so:system/vendor/lib/libjni_chromaflash.so \
-    vendor/oneplus/cheeseburger/proprietary/vendor/lib/libjni_dualcamera.so:system/vendor/lib/libjni_dualcamera.so \
-    vendor/oneplus/cheeseburger/proprietary/vendor/lib/libjni_filtergenerator.so:system/vendor/lib/libjni_filtergenerator.so \
-    vendor/oneplus/cheeseburger/proprietary/vendor/lib/libjni_makeupV2.so:system/vendor/lib/libjni_makeupV2.so \
-    vendor/oneplus/cheeseburger/proprietary/vendor/lib/libjni_optizoom.so:system/vendor/lib/libjni_optizoom.so \
-    vendor/oneplus/cheeseburger/proprietary/vendor/lib/libjni_panorama.so:system/vendor/lib/libjni_panorama.so \
-    vendor/oneplus/cheeseburger/proprietary/vendor/lib/libjni_sharpshooter.so:system/vendor/lib/libjni_sharpshooter.so \
-    vendor/oneplus/cheeseburger/proprietary/vendor/lib/libjni_stillmore.so:system/vendor/lib/libjni_stillmore.so \
-    vendor/oneplus/cheeseburger/proprietary/vendor/lib/libjni_trackingfocus.so:system/vendor/lib/libjni_trackingfocus.so \
-    vendor/oneplus/cheeseburger/proprietary/vendor/lib/libjni_ubifocus.so:system/vendor/lib/libjni_ubifocus.so \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib/libjpegdhw.so:system/vendor/lib/libjpegdhw.so \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib/libjpegdmahw.so:system/vendor/lib/libjpegdmahw.so \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib/libjpegehw.so:system/vendor/lib/libjpegehw.so \
@@ -228,7 +327,6 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib/libmmcamera_chromaflash_lib.so:system/vendor/lib/libmmcamera_chromaflash_lib.so \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib/libmmcamera_dbg.so:system/vendor/lib/libmmcamera_dbg.so \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib/libmmcamera_dummyalgo.so:system/vendor/lib/libmmcamera_dummyalgo.so \
-    vendor/oneplus/cheeseburger/proprietary/vendor/lib/libmmcamera_edgesmooth_lib.so:system/vendor/lib/libmmcamera_edgesmooth_lib.so \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib/libmmcamera_eebinparse.so:system/vendor/lib/libmmcamera_eebinparse.so \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib/libmmcamera_eeprom_util.so:system/vendor/lib/libmmcamera_eeprom_util.so \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib/libmmcamera_eztune_module.so:system/vendor/lib/libmmcamera_eztune_module.so \
@@ -240,12 +338,14 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib/libmmcamera_hvx_grid_sum.so:system/vendor/lib/libmmcamera_hvx_grid_sum.so \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib/libmmcamera_imglib.so:system/vendor/lib/libmmcamera_imglib.so \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib/libmmcamera_imglib_faceproc_adspstub.so:system/vendor/lib/libmmcamera_imglib_faceproc_adspstub.so \
-    vendor/oneplus/cheeseburger/proprietary/vendor/lib/libmmcamera_imglib_faceproc_adspstub2.so:system/vendor/lib/libmmcamera_imglib_faceproc_adspstub2.so \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib/libmmcamera_imx350.so:system/vendor/lib/libmmcamera_imx350.so \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib/libmmcamera_imx350_gt24c64ass_eeprom.so:system/vendor/lib/libmmcamera_imx350_gt24c64ass_eeprom.so \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib/libmmcamera_imx371.so:system/vendor/lib/libmmcamera_imx371.so \
+    vendor/oneplus/cheeseburger/proprietary/vendor/lib/libmmcamera_imx376k.so:system/vendor/lib/libmmcamera_imx376k.so \
+    vendor/oneplus/cheeseburger/proprietary/vendor/lib/libmmcamera_imx376k_gt24c64_eeprom.so:system/vendor/lib/libmmcamera_imx376k_gt24c64_eeprom.so \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib/libmmcamera_imx398.so:system/vendor/lib/libmmcamera_imx398.so \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib/libmmcamera_imx398_gt24c64_eeprom.so:system/vendor/lib/libmmcamera_imx398_gt24c64_eeprom.so \
+    vendor/oneplus/cheeseburger/proprietary/vendor/lib/libmmcamera_interface.so:system/vendor/lib/libmmcamera_interface.so \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib/libmmcamera_isp_abf48.so:system/vendor/lib/libmmcamera_isp_abf48.so \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib/libmmcamera_isp_aec_bg_stats47.so:system/vendor/lib/libmmcamera_isp_aec_bg_stats47.so \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib/libmmcamera_isp_bf_stats47.so:system/vendor/lib/libmmcamera_isp_bf_stats47.so \
@@ -296,10 +396,8 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib/libmmcamera_pdaf.so:system/vendor/lib/libmmcamera_pdaf.so \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib/libmmcamera_pdafcamif.so:system/vendor/lib/libmmcamera_pdafcamif.so \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib/libmmcamera_ppbase_module.so:system/vendor/lib/libmmcamera_ppbase_module.so \
-    vendor/oneplus/cheeseburger/proprietary/vendor/lib/libmmcamera_ppeiscore.so:system/vendor/lib/libmmcamera_ppeiscore.so \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib/libmmcamera_quadracfa.so:system/vendor/lib/libmmcamera_quadracfa.so \
-    vendor/oneplus/cheeseburger/proprietary/vendor/lib/libmmcamera_sac_lib.so:system/vendor/lib/libmmcamera_sac_lib.so \
-    vendor/oneplus/cheeseburger/proprietary/vendor/lib/libmmcamera_sat_dummy_lib.so:system/vendor/lib/libmmcamera_sat_dummy_lib.so \
+    vendor/oneplus/cheeseburger/proprietary/vendor/lib/libmmcamera_s5k3p8sp_m24c64s_eeprom.so:system/vendor/lib/libmmcamera_s5k3p8sp_m24c64s_eeprom.so \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib/libmmcamera_sony_imx371_eeprom.so:system/vendor/lib/libmmcamera_sony_imx371_eeprom.so \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib/libmmcamera_stillmore_lib.so:system/vendor/lib/libmmcamera_stillmore_lib.so \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib/libmmcamera_sw2d_lib.so:system/vendor/lib/libmmcamera_sw2d_lib.so \
@@ -309,171 +407,347 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib/libmmcamera_trueportrait_lib.so:system/vendor/lib/libmmcamera_trueportrait_lib.so \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib/libmmcamera_tuning.so:system/vendor/lib/libmmcamera_tuning.so \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib/libmmcamera_tuning_lookup.so:system/vendor/lib/libmmcamera_tuning_lookup.so \
-    vendor/oneplus/cheeseburger/proprietary/vendor/lib/libmmcamera_ubifocus_lib.so:system/vendor/lib/libmmcamera_ubifocus_lib.so \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib/libmmjpeg.so:system/vendor/lib/libmmjpeg.so \
+    vendor/oneplus/cheeseburger/proprietary/vendor/lib/libmmjpeg_interface.so:system/vendor/lib/libmmjpeg_interface.so \
+    vendor/oneplus/cheeseburger/proprietary/vendor/lib/libmmlib2d_interface.so:system/vendor/lib/libmmlib2d_interface.so \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib/libmmqjpeg_codec.so:system/vendor/lib/libmmqjpeg_codec.so \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib/libmmqjpegdma.so:system/vendor/lib/libmmqjpegdma.so \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib/libmpbase.so:system/vendor/lib/libmpbase.so \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib/liboptizoom.so:system/vendor/lib/liboptizoom.so \
+    vendor/oneplus/cheeseburger/proprietary/vendor/lib/libqomx_core.so:system/vendor/lib/libqomx_core.so \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib/libqomx_jpegdec.so:system/vendor/lib/libqomx_jpegdec.so \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib/libqomx_jpegenc.so:system/vendor/lib/libqomx_jpegenc.so \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib/libqomx_jpegenc_pipe.so:system/vendor/lib/libqomx_jpegenc_pipe.so \
+    vendor/oneplus/cheeseburger/proprietary/vendor/lib/libscveBlobDescriptor.so:system/vendor/lib/libscveBlobDescriptor.so \
+    vendor/oneplus/cheeseburger/proprietary/vendor/lib/libscveBlobDescriptor_stub.so:system/vendor/lib/libscveBlobDescriptor_stub.so \
+    vendor/oneplus/cheeseburger/proprietary/vendor/lib/libscveCommon.so:system/vendor/lib/libscveCommon.so \
+    vendor/oneplus/cheeseburger/proprietary/vendor/lib/libscveCommon_stub.so:system/vendor/lib/libscveCommon_stub.so \
+    vendor/oneplus/cheeseburger/proprietary/vendor/lib/libscveFaceLandmarks.so:system/vendor/lib/libscveFaceLandmarks.so \
+    vendor/oneplus/cheeseburger/proprietary/vendor/lib/libscveFaceLandmarks_stub.so:system/vendor/lib/libscveFaceLandmarks_stub.so \
+    vendor/oneplus/cheeseburger/proprietary/vendor/lib/libscveFaceRecognition.so:system/vendor/lib/libscveFaceRecognition.so \
+    vendor/oneplus/cheeseburger/proprietary/vendor/lib/libscveImageCorrection.so:system/vendor/lib/libscveImageCorrection.so \
+    vendor/oneplus/cheeseburger/proprietary/vendor/lib/libscveObjectSegmentation.so:system/vendor/lib/libscveObjectSegmentation.so \
+    vendor/oneplus/cheeseburger/proprietary/vendor/lib/libscveObjectTracker.so:system/vendor/lib/libscveObjectTracker.so \
+    vendor/oneplus/cheeseburger/proprietary/vendor/lib/libscveObjectTracker_stub.so:system/vendor/lib/libscveObjectTracker_stub.so \
+    vendor/oneplus/cheeseburger/proprietary/vendor/lib/libscvePanorama.so:system/vendor/lib/libscvePanorama.so \
+    vendor/oneplus/cheeseburger/proprietary/vendor/lib/libscvePanorama_lite.so:system/vendor/lib/libscvePanorama_lite.so \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib/libseemore.so:system/vendor/lib/libseemore.so \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib/libst_disp.so:system/vendor/lib/libst_disp.so \
-    vendor/oneplus/cheeseburger/proprietary/vendor/lib/libtrueportrait.so:system/vendor/lib/libtrueportrait.so \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib/libubifocus.so:system/vendor/lib/libubifocus.so \
-    vendor/oneplus/cheeseburger/proprietary/vendor/lib64/libblurbuster.so:system/vendor/lib64/libblurbuster.so \
+    vendor/oneplus/cheeseburger/proprietary/vendor/lib/sensor_calibrate.so:system/vendor/lib/sensor_calibrate.so \
+    vendor/oneplus/cheeseburger/proprietary/vendor/lib/vendor.qti.hardware.camera.device@1.0_vendor.so:system/vendor/lib/vendor.qti.hardware.camera.device@1.0_vendor.so \
+    vendor/oneplus/cheeseburger/proprietary/vendor/lib/vendor.qti.hardware.fingerprint@1.0.so:system/vendor/lib/vendor.qti.hardware.fingerprint@1.0.so \
+    vendor/oneplus/cheeseburger/proprietary/vendor/lib/vendor.qti.hardware.sensorscalibrate@1.0.so:system/vendor/lib/vendor.qti.hardware.sensorscalibrate@1.0.so \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib64/libcdsprpc.so:system/vendor/lib64/libcdsprpc.so \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib64/libchromaflash.so:system/vendor/lib64/libchromaflash.so \
-    vendor/oneplus/cheeseburger/proprietary/vendor/lib64/libjni_blurbuster.so:system/vendor/lib64/libjni_blurbuster.so \
-    vendor/oneplus/cheeseburger/proprietary/vendor/lib64/libjni_chromaflash.so:system/vendor/lib64/libjni_chromaflash.so \
-    vendor/oneplus/cheeseburger/proprietary/vendor/lib64/libjni_clearsight.so:system/vendor/lib64/libjni_clearsight.so \
-    vendor/oneplus/cheeseburger/proprietary/vendor/lib64/libjni_makeupV2.so:system/vendor/lib64/libjni_makeupV2.so \
-    vendor/oneplus/cheeseburger/proprietary/vendor/lib64/libjni_optizoom.so:system/vendor/lib64/libjni_optizoom.so \
-    vendor/oneplus/cheeseburger/proprietary/vendor/lib64/libjni_panorama.so:system/vendor/lib64/libjni_panorama.so \
-    vendor/oneplus/cheeseburger/proprietary/vendor/lib64/libjni_sharpshooter.so:system/vendor/lib64/libjni_sharpshooter.so \
-    vendor/oneplus/cheeseburger/proprietary/vendor/lib64/libjni_stillmore.so:system/vendor/lib64/libjni_stillmore.so \
-    vendor/oneplus/cheeseburger/proprietary/vendor/lib64/libjni_trackingfocus.so:system/vendor/lib64/libjni_trackingfocus.so \
-    vendor/oneplus/cheeseburger/proprietary/vendor/lib64/libjni_ubifocus.so:system/vendor/lib64/libjni_ubifocus.so \
+    vendor/oneplus/cheeseburger/proprietary/vendor/lib64/libmmcamera2_frame_algorithm.so:system/vendor/lib64/libmmcamera2_frame_algorithm.so \
+    vendor/oneplus/cheeseburger/proprietary/vendor/lib64/libmmcamera2_is.so:system/vendor/lib64/libmmcamera2_is.so \
+    vendor/oneplus/cheeseburger/proprietary/vendor/lib64/libmmcamera2_q3a_core.so:system/vendor/lib64/libmmcamera2_q3a_core.so \
+    vendor/oneplus/cheeseburger/proprietary/vendor/lib64/libmmcamera2_stats_algorithm.so:system/vendor/lib64/libmmcamera2_stats_algorithm.so \
+    vendor/oneplus/cheeseburger/proprietary/vendor/lib64/libmmcamera2_stats_lib.so:system/vendor/lib64/libmmcamera2_stats_lib.so \
+    vendor/oneplus/cheeseburger/proprietary/vendor/lib64/libmmcamera_dbg.so:system/vendor/lib64/libmmcamera_dbg.so \
+    vendor/oneplus/cheeseburger/proprietary/vendor/lib64/libmmcamera_faceproc.so:system/vendor/lib64/libmmcamera_faceproc.so \
+    vendor/oneplus/cheeseburger/proprietary/vendor/lib64/libmmcamera_faceproc2.so:system/vendor/lib64/libmmcamera_faceproc2.so \
+    vendor/oneplus/cheeseburger/proprietary/vendor/lib64/libmmcamera_tintless_algo.so:system/vendor/lib64/libmmcamera_tintless_algo.so \
+    vendor/oneplus/cheeseburger/proprietary/vendor/lib64/libmmcamera_tintless_bg_pca_algo.so:system/vendor/lib64/libmmcamera_tintless_bg_pca_algo.so \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib64/liboptizoom.so:system/vendor/lib64/liboptizoom.so \
-    vendor/oneplus/cheeseburger/proprietary/vendor/lib64/libseemore.so:system/vendor/lib64/libseemore.so
+    vendor/oneplus/cheeseburger/proprietary/vendor/lib64/libscveBlobDescriptor.so:system/vendor/lib64/libscveBlobDescriptor.so \
+    vendor/oneplus/cheeseburger/proprietary/vendor/lib64/libscveBlobDescriptor_stub.so:system/vendor/lib64/libscveBlobDescriptor_stub.so \
+    vendor/oneplus/cheeseburger/proprietary/vendor/lib64/libscveCommon.so:system/vendor/lib64/libscveCommon.so \
+    vendor/oneplus/cheeseburger/proprietary/vendor/lib64/libscveCommon_stub.so:system/vendor/lib64/libscveCommon_stub.so \
+    vendor/oneplus/cheeseburger/proprietary/vendor/lib64/libscveFaceLandmarks.so:system/vendor/lib64/libscveFaceLandmarks.so \
+    vendor/oneplus/cheeseburger/proprietary/vendor/lib64/libscveFaceLandmarks_stub.so:system/vendor/lib64/libscveFaceLandmarks_stub.so \
+    vendor/oneplus/cheeseburger/proprietary/vendor/lib64/libscveFaceRecognition.so:system/vendor/lib64/libscveFaceRecognition.so \
+    vendor/oneplus/cheeseburger/proprietary/vendor/lib64/libscveImageCorrection.so:system/vendor/lib64/libscveImageCorrection.so \
+    vendor/oneplus/cheeseburger/proprietary/vendor/lib64/libscveObjectSegmentation.so:system/vendor/lib64/libscveObjectSegmentation.so \
+    vendor/oneplus/cheeseburger/proprietary/vendor/lib64/libscveObjectTracker.so:system/vendor/lib64/libscveObjectTracker.so \
+    vendor/oneplus/cheeseburger/proprietary/vendor/lib64/libscveObjectTracker_stub.so:system/vendor/lib64/libscveObjectTracker_stub.so \
+    vendor/oneplus/cheeseburger/proprietary/vendor/lib64/libscvePanorama.so:system/vendor/lib64/libscvePanorama.so \
+    vendor/oneplus/cheeseburger/proprietary/vendor/lib64/libscvePanorama_lite.so:system/vendor/lib64/libscvePanorama_lite.so \
+    vendor/oneplus/cheeseburger/proprietary/vendor/lib64/libseemore.so:system/vendor/lib64/libseemore.so \
+    vendor/oneplus/cheeseburger/proprietary/vendor/lib64/sensor_calibrate.so:system/vendor/lib64/sensor_calibrate.so \
+    vendor/oneplus/cheeseburger/proprietary/vendor/lib64/vendor.qti.hardware.camera.device@1.0_vendor.so:system/vendor/lib64/vendor.qti.hardware.camera.device@1.0_vendor.so \
+    vendor/oneplus/cheeseburger/proprietary/vendor/lib64/vendor.qti.hardware.fingerprint@1.0.so:system/vendor/lib64/vendor.qti.hardware.fingerprint@1.0.so \
+    vendor/oneplus/cheeseburger/proprietary/vendor/lib64/vendor.qti.hardware.sensorscalibrate@1.0.so:system/vendor/lib64/vendor.qti.hardware.sensorscalibrate@1.0.so
 
 PRODUCT_PACKAGES += \
     IFAAService \
+    SmartcardService \
+    org.simalliance.openmobileapi \
     dashd
 
 ifeq ($(QCPATH),)
 PRODUCT_COPY_FILES += \
-    vendor/oneplus/cheeseburger/proprietary/bin/adsprpcd:system/bin/adsprpcd \
-    vendor/oneplus/cheeseburger/proprietary/bin/btnvtool:system/bin/btnvtool \
-    vendor/oneplus/cheeseburger/proprietary/bin/cnd:system/bin/cnd \
-    vendor/oneplus/cheeseburger/proprietary/bin/cnss-daemon:system/bin/cnss-daemon \
-    vendor/oneplus/cheeseburger/proprietary/bin/cnss_diag:system/bin/cnss_diag \
     vendor/oneplus/cheeseburger/proprietary/bin/dpmd:system/bin/dpmd \
-    vendor/oneplus/cheeseburger/proprietary/bin/energy-awareness:system/bin/energy-awareness \
-    vendor/oneplus/cheeseburger/proprietary/bin/hci_qcomm_init:system/bin/hci_qcomm_init \
-    vendor/oneplus/cheeseburger/proprietary/bin/ims_rtp_daemon:system/bin/ims_rtp_daemon \
-    vendor/oneplus/cheeseburger/proprietary/bin/imscmservice:system/bin/imscmservice \
-    vendor/oneplus/cheeseburger/proprietary/bin/imsdatadaemon:system/bin/imsdatadaemon \
-    vendor/oneplus/cheeseburger/proprietary/bin/imsqmidaemon:system/bin/imsqmidaemon \
-    vendor/oneplus/cheeseburger/proprietary/bin/init.qti.qseecomd.sh:system/bin/init.qti.qseecomd.sh \
-    vendor/oneplus/cheeseburger/proprietary/bin/irsc_util:system/bin/irsc_util \
-    vendor/oneplus/cheeseburger/proprietary/bin/loc_launcher:system/bin/loc_launcher \
-    vendor/oneplus/cheeseburger/proprietary/bin/lowi-server:system/bin/lowi-server \
-    vendor/oneplus/cheeseburger/proprietary/bin/msm_irqbalance:system/bin/msm_irqbalance \
-    vendor/oneplus/cheeseburger/proprietary/bin/netmgrd:system/bin/netmgrd \
-    vendor/oneplus/cheeseburger/proprietary/bin/pm-proxy:system/bin/pm-proxy \
-    vendor/oneplus/cheeseburger/proprietary/bin/pm-service:system/bin/pm-service \
-    vendor/oneplus/cheeseburger/proprietary/bin/qseecomd:system/bin/qseecomd \
-    vendor/oneplus/cheeseburger/proprietary/bin/qvop-daemon:system/bin/qvop-daemon \
-    vendor/oneplus/cheeseburger/proprietary/bin/radish:system/bin/radish \
-    vendor/oneplus/cheeseburger/proprietary/bin/rmt_storage:system/bin/rmt_storage \
-    vendor/oneplus/cheeseburger/proprietary/bin/sensors.qcom:system/bin/sensors.qcom \
-    vendor/oneplus/cheeseburger/proprietary/bin/tftp_server:system/bin/tftp_server \
-    vendor/oneplus/cheeseburger/proprietary/bin/time_daemon:system/bin/time_daemon \
-    vendor/oneplus/cheeseburger/proprietary/bin/wcnss_filter:system/bin/wcnss_filter \
-    vendor/oneplus/cheeseburger/proprietary/bin/xtwifi-client:system/bin/xtwifi-client \
-    vendor/oneplus/cheeseburger/proprietary/bin/xtwifi-inet-agent:system/bin/xtwifi-inet-agent \
-    vendor/oneplus/cheeseburger/proprietary/etc/cacert_location.pem:system/etc/cacert_location.pem \
+    vendor/oneplus/cheeseburger/proprietary/bin/qvrcameratseq:system/bin/qvrcameratseq \
+    vendor/oneplus/cheeseburger/proprietary/bin/qvrservice:system/bin/qvrservice \
+    vendor/oneplus/cheeseburger/proprietary/bin/qvrservicetest:system/bin/qvrservicetest \
+    vendor/oneplus/cheeseburger/proprietary/bin/qvrservicetest64:system/bin/qvrservicetest64 \
     vendor/oneplus/cheeseburger/proprietary/etc/cne/SwimConfig.xml:system/etc/cne/SwimConfig.xml \
     vendor/oneplus/cheeseburger/proprietary/etc/cne/andsfCne.xml:system/etc/cne/andsfCne.xml \
-    vendor/oneplus/cheeseburger/proprietary/etc/cne/wqeclient/ATT/ATT_profile1.xml:system/etc/cne/wqeclient/ATT/ATT_profile1.xml \
-    vendor/oneplus/cheeseburger/proprietary/etc/cne/wqeclient/ATT/ATT_profile2.xml:system/etc/cne/wqeclient/ATT/ATT_profile2.xml \
-    vendor/oneplus/cheeseburger/proprietary/etc/cne/wqeclient/ATT/ATT_profile3.xml:system/etc/cne/wqeclient/ATT/ATT_profile3.xml \
-    vendor/oneplus/cheeseburger/proprietary/etc/cne/wqeclient/ATT/ATT_profile4.xml:system/etc/cne/wqeclient/ATT/ATT_profile4.xml \
-    vendor/oneplus/cheeseburger/proprietary/etc/cne/wqeclient/ROW/ROW_profile1.xml:system/etc/cne/wqeclient/ROW/ROW_profile1.xml \
-    vendor/oneplus/cheeseburger/proprietary/etc/cne/wqeclient/ROW/ROW_profile2.xml:system/etc/cne/wqeclient/ROW/ROW_profile2.xml \
-    vendor/oneplus/cheeseburger/proprietary/etc/cne/wqeclient/ROW/ROW_profile3.xml:system/etc/cne/wqeclient/ROW/ROW_profile3.xml \
-    vendor/oneplus/cheeseburger/proprietary/etc/cne/wqeclient/ROW/ROW_profile4.xml:system/etc/cne/wqeclient/ROW/ROW_profile4.xml \
-    vendor/oneplus/cheeseburger/proprietary/etc/cne/wqeclient/ROW/ROW_profile5.xml:system/etc/cne/wqeclient/ROW/ROW_profile5.xml \
-    vendor/oneplus/cheeseburger/proprietary/etc/cne/wqeclient/VZW/VZW_profile1.xml:system/etc/cne/wqeclient/VZW/VZW_profile1.xml \
-    vendor/oneplus/cheeseburger/proprietary/etc/cne/wqeclient/VZW/VZW_profile2.xml:system/etc/cne/wqeclient/VZW/VZW_profile2.xml \
-    vendor/oneplus/cheeseburger/proprietary/etc/cne/wqeclient/VZW/VZW_profile3.xml:system/etc/cne/wqeclient/VZW/VZW_profile3.xml \
-    vendor/oneplus/cheeseburger/proprietary/etc/cne/wqeclient/VZW/VZW_profile4.xml:system/etc/cne/wqeclient/VZW/VZW_profile4.xml \
-    vendor/oneplus/cheeseburger/proprietary/etc/cne/wqeclient/VZW/VZW_profile5.xml:system/etc/cne/wqeclient/VZW/VZW_profile5.xml \
-    vendor/oneplus/cheeseburger/proprietary/etc/cne/wqeclient/VZW/VZW_profile6.xml:system/etc/cne/wqeclient/VZW/VZW_profile6.xml \
-    vendor/oneplus/cheeseburger/proprietary/etc/data/dsi_config.xml:system/etc/data/dsi_config.xml \
-    vendor/oneplus/cheeseburger/proprietary/etc/data/netmgr_config.xml:system/etc/data/netmgr_config.xml \
     vendor/oneplus/cheeseburger/proprietary/etc/dpm/dpm.conf:system/etc/dpm/dpm.conf \
     vendor/oneplus/cheeseburger/proprietary/etc/dpm/nsrm/NsrmConfiguration.xml:system/etc/dpm/nsrm/NsrmConfiguration.xml \
-    vendor/oneplus/cheeseburger/proprietary/etc/firmware/nvm_tlv.bin:system/etc/firmware/nvm_tlv.bin \
-    vendor/oneplus/cheeseburger/proprietary/etc/firmware/nvm_tlv_1.3.bin:system/etc/firmware/nvm_tlv_1.3.bin \
-    vendor/oneplus/cheeseburger/proprietary/etc/firmware/nvm_tlv_2.1.bin:system/etc/firmware/nvm_tlv_2.1.bin \
-    vendor/oneplus/cheeseburger/proprietary/etc/firmware/nvm_tlv_3.0.bin:system/etc/firmware/nvm_tlv_3.0.bin \
-    vendor/oneplus/cheeseburger/proprietary/etc/firmware/nvm_tlv_3.2.bin:system/etc/firmware/nvm_tlv_3.2.bin \
-    vendor/oneplus/cheeseburger/proprietary/etc/firmware/rampatch_tlv.img:system/etc/firmware/rampatch_tlv.img \
-    vendor/oneplus/cheeseburger/proprietary/etc/firmware/rampatch_tlv_1.3.tlv:system/etc/firmware/rampatch_tlv_1.3.tlv \
-    vendor/oneplus/cheeseburger/proprietary/etc/firmware/rampatch_tlv_2.1.tlv:system/etc/firmware/rampatch_tlv_2.1.tlv \
-    vendor/oneplus/cheeseburger/proprietary/etc/firmware/rampatch_tlv_3.0.tlv:system/etc/firmware/rampatch_tlv_3.0.tlv \
-    vendor/oneplus/cheeseburger/proprietary/etc/firmware/rampatch_tlv_3.2.tlv:system/etc/firmware/rampatch_tlv_3.2.tlv \
-    vendor/oneplus/cheeseburger/proprietary/etc/permissions/ConnectivityExt.xml:system/etc/permissions/ConnectivityExt.xml \
+    vendor/oneplus/cheeseburger/proprietary/etc/init/dpmd.rc:system/etc/init/dpmd.rc \
+    vendor/oneplus/cheeseburger/proprietary/etc/permissions/audiosphere.xml:system/etc/permissions/audiosphere.xml \
     vendor/oneplus/cheeseburger/proprietary/etc/permissions/cneapiclient.xml:system/etc/permissions/cneapiclient.xml \
-    vendor/oneplus/cheeseburger/proprietary/etc/permissions/com.qti.dpmframework.xml:system/etc/permissions/com.qti.dpmframework.xml \
-    vendor/oneplus/cheeseburger/proprietary/etc/permissions/com.qti.location.sdk.xml:system/etc/permissions/com.qti.location.sdk.xml \
-    vendor/oneplus/cheeseburger/proprietary/etc/permissions/com.qti.snapdragon.sdk.display.xml:system/etc/permissions/com.qti.snapdragon.sdk.display.xml \
-    vendor/oneplus/cheeseburger/proprietary/etc/permissions/com.qualcomm.location.vzw_library.xml:system/etc/permissions/com.qualcomm.location.vzw_library.xml \
-    vendor/oneplus/cheeseburger/proprietary/etc/permissions/com.qualcomm.location.xml:system/etc/permissions/com.qualcomm.location.xml \
     vendor/oneplus/cheeseburger/proprietary/etc/permissions/com.quicinc.cne.xml:system/etc/permissions/com.quicinc.cne.xml \
-    vendor/oneplus/cheeseburger/proprietary/etc/permissions/dpmapi.xml:system/etc/permissions/dpmapi.xml \
-    vendor/oneplus/cheeseburger/proprietary/etc/permissions/embms.xml:system/etc/permissions/embms.xml \
-    vendor/oneplus/cheeseburger/proprietary/etc/permissions/imscm.xml:system/etc/permissions/imscm.xml \
-    vendor/oneplus/cheeseburger/proprietary/etc/permissions/izat.xt.srv.xml:system/etc/permissions/izat.xt.srv.xml \
-    vendor/oneplus/cheeseburger/proprietary/etc/permissions/qcnvitems.xml:system/etc/permissions/qcnvitems.xml \
-    vendor/oneplus/cheeseburger/proprietary/etc/permissions/qcrilhook.xml:system/etc/permissions/qcrilhook.xml \
     vendor/oneplus/cheeseburger/proprietary/etc/permissions/qti-vzw-ims-internal.xml:system/etc/permissions/qti-vzw-ims-internal.xml \
+    vendor/oneplus/cheeseburger/proprietary/etc/permissions/qti_libpermissions.xml:system/etc/permissions/qti_libpermissions.xml \
     vendor/oneplus/cheeseburger/proprietary/etc/permissions/qti_permissions.xml:system/etc/permissions/qti_permissions.xml \
-    vendor/oneplus/cheeseburger/proprietary/etc/permissions/telephonyservice.xml:system/etc/permissions/telephonyservice.xml \
-    vendor/oneplus/cheeseburger/proprietary/etc/thermal-engine.conf:system/etc/thermal-engine.conf \
-    vendor/oneplus/cheeseburger/proprietary/etc/xtra_root_cert.pem:system/etc/xtra_root_cert.pem \
-    vendor/oneplus/cheeseburger/proprietary/framework/ConnectivityExt.jar:system/framework/ConnectivityExt.jar \
+    vendor/oneplus/cheeseburger/proprietary/etc/permissions/radioconfig.xml:system/etc/permissions/radioconfig.xml \
+    vendor/oneplus/cheeseburger/proprietary/etc/sysconfig/qti_whitelist.xml:system/etc/sysconfig/qti_whitelist.xml \
     vendor/oneplus/cheeseburger/proprietary/framework/QtiTelephonyServicelibrary.jar:system/framework/QtiTelephonyServicelibrary.jar \
+    vendor/oneplus/cheeseburger/proprietary/framework/audiosphere.jar:system/framework/audiosphere.jar \
     vendor/oneplus/cheeseburger/proprietary/framework/cneapiclient.jar:system/framework/cneapiclient.jar \
     vendor/oneplus/cheeseburger/proprietary/framework/com.qti.dpmframework.jar:system/framework/com.qti.dpmframework.jar \
     vendor/oneplus/cheeseburger/proprietary/framework/com.qti.location.sdk.jar:system/framework/com.qti.location.sdk.jar \
     vendor/oneplus/cheeseburger/proprietary/framework/com.qti.snapdragon.sdk.display.jar:system/framework/com.qti.snapdragon.sdk.display.jar \
-    vendor/oneplus/cheeseburger/proprietary/framework/com.qualcomm.location.vzw_library.jar:system/framework/com.qualcomm.location.vzw_library.jar \
+    vendor/oneplus/cheeseburger/proprietary/framework/com.quicinc.cne.api-V1.0-java.jar:system/framework/com.quicinc.cne.api-V1.0-java.jar \
     vendor/oneplus/cheeseburger/proprietary/framework/com.quicinc.cne.jar:system/framework/com.quicinc.cne.jar \
+    vendor/oneplus/cheeseburger/proprietary/framework/dpm.jar:system/framework/dpm.jar \
     vendor/oneplus/cheeseburger/proprietary/framework/dpmapi.jar:system/framework/dpmapi.jar \
     vendor/oneplus/cheeseburger/proprietary/framework/embmslibrary.jar:system/framework/embmslibrary.jar \
-    vendor/oneplus/cheeseburger/proprietary/framework/imscmlibrary.jar:system/framework/imscmlibrary.jar \
     vendor/oneplus/cheeseburger/proprietary/framework/izat.xt.srv.jar:system/framework/izat.xt.srv.jar \
     vendor/oneplus/cheeseburger/proprietary/framework/qti-telephony-common.jar:system/framework/qti-telephony-common.jar \
-    vendor/oneplus/cheeseburger/proprietary/framework/rcsimssettings.jar:system/framework/rcsimssettings.jar \
+    vendor/oneplus/cheeseburger/proprietary/framework/rcs_service_aidl.jar:system/framework/rcs_service_aidl.jar \
+    vendor/oneplus/cheeseburger/proprietary/framework/rcs_service_api.jar:system/framework/rcs_service_api.jar \
     vendor/oneplus/cheeseburger/proprietary/framework/tcmclient.jar:system/framework/tcmclient.jar \
-    vendor/oneplus/cheeseburger/proprietary/lib/libOmxVpp.so:system/lib/libOmxVpp.so \
-    vendor/oneplus/cheeseburger/proprietary/lib/libvpplibrary.so:system/lib/libvpplibrary.so \
-    vendor/oneplus/cheeseburger/proprietary/lib64/libOmxVpp.so:system/lib64/libOmxVpp.so \
-    vendor/oneplus/cheeseburger/proprietary/lib64/libloc_ds_api.so:system/lib64/libloc_ds_api.so \
-    vendor/oneplus/cheeseburger/proprietary/lib64/libvpplibrary.so:system/lib64/libvpplibrary.so \
+    vendor/oneplus/cheeseburger/proprietary/lib/com.qualcomm.qti.dpm.api@1.0.so:system/lib/com.qualcomm.qti.dpm.api@1.0.so \
+    vendor/oneplus/cheeseburger/proprietary/lib/com.qualcomm.qti.imscmservice@1.0.so:system/lib/com.qualcomm.qti.imscmservice@1.0.so \
+    vendor/oneplus/cheeseburger/proprietary/lib/com.qualcomm.qti.wifidisplayhal@1.0.so:system/lib/com.qualcomm.qti.wifidisplayhal@1.0.so \
+    vendor/oneplus/cheeseburger/proprietary/lib/lib-imscamera.so:system/lib/lib-imscamera.so \
+    vendor/oneplus/cheeseburger/proprietary/lib/lib-imsvideocodec.so:system/lib/lib-imsvideocodec.so \
+    vendor/oneplus/cheeseburger/proprietary/lib/lib-imsvtextutils.so:system/lib/lib-imsvtextutils.so \
+    vendor/oneplus/cheeseburger/proprietary/lib/lib-imsvtutils.so:system/lib/lib-imsvtutils.so \
+    vendor/oneplus/cheeseburger/proprietary/lib/libGPTEE_system.so:system/lib/libGPTEE_system.so \
+    vendor/oneplus/cheeseburger/proprietary/lib/libOmxMux.so:system/lib/libOmxMux.so \
+    vendor/oneplus/cheeseburger/proprietary/lib/libQTEEConnector_system.so:system/lib/libQTEEConnector_system.so \
+    vendor/oneplus/cheeseburger/proprietary/lib/libdiag_system.so:system/lib/libdiag_system.so \
+    vendor/oneplus/cheeseburger/proprietary/lib/libdpmctmgr.so:system/lib/libdpmctmgr.so \
+    vendor/oneplus/cheeseburger/proprietary/lib/libdpmfdmgr.so:system/lib/libdpmfdmgr.so \
+    vendor/oneplus/cheeseburger/proprietary/lib/libdpmframework.so:system/lib/libdpmframework.so \
+    vendor/oneplus/cheeseburger/proprietary/lib/libdpmnsrm.so:system/lib/libdpmnsrm.so \
+    vendor/oneplus/cheeseburger/proprietary/lib/libdpmtcm.so:system/lib/libdpmtcm.so \
+    vendor/oneplus/cheeseburger/proprietary/lib/libimscamera_jni.so:system/lib/libimscamera_jni.so \
+    vendor/oneplus/cheeseburger/proprietary/lib/libimsmedia_jni.so:system/lib/libimsmedia_jni.so \
+    vendor/oneplus/cheeseburger/proprietary/lib/liblocationservice_jni.so:system/lib/liblocationservice_jni.so \
+    vendor/oneplus/cheeseburger/proprietary/lib/libmmosal.so:system/lib/libmmosal.so \
+    vendor/oneplus/cheeseburger/proprietary/lib/libmmrtpdecoder.so:system/lib/libmmrtpdecoder.so \
+    vendor/oneplus/cheeseburger/proprietary/lib/libmmrtpencoder.so:system/lib/libmmrtpencoder.so \
+    vendor/oneplus/cheeseburger/proprietary/lib/libqmi_cci_system.so:system/lib/libqmi_cci_system.so \
+    vendor/oneplus/cheeseburger/proprietary/lib/libqvr_adsp_driver_skel.so:system/lib/libqvr_adsp_driver_skel.so \
+    vendor/oneplus/cheeseburger/proprietary/lib/libqvr_adsp_driver_stub.so:system/lib/libqvr_adsp_driver_stub.so \
+    vendor/oneplus/cheeseburger/proprietary/lib/libqvrcamera_client.so:system/lib/libqvrcamera_client.so \
+    vendor/oneplus/cheeseburger/proprietary/lib/libqvrservice.so:system/lib/libqvrservice.so \
+    vendor/oneplus/cheeseburger/proprietary/lib/libqvrservice_client.so:system/lib/libqvrservice_client.so \
+    vendor/oneplus/cheeseburger/proprietary/lib/libqvrservice_hvxcameraclient.so:system/lib/libqvrservice_hvxcameraclient.so \
+    vendor/oneplus/cheeseburger/proprietary/lib/libqvrservice_ov7251_hvx_tuning.so:system/lib/libqvrservice_ov7251_hvx_tuning.so \
+    vendor/oneplus/cheeseburger/proprietary/lib/libqvrservice_ov9282_hvx_tuning.so:system/lib/libqvrservice_ov9282_hvx_tuning.so \
+    vendor/oneplus/cheeseburger/proprietary/lib/librcc.so:system/lib/librcc.so \
+    vendor/oneplus/cheeseburger/proprietary/lib/libsd_sdk_display.so:system/lib/libsd_sdk_display.so \
+    vendor/oneplus/cheeseburger/proprietary/lib/libsdm-disp-apis.so:system/lib/libsdm-disp-apis.so \
+    vendor/oneplus/cheeseburger/proprietary/lib/libsecureui_svcsock_system.so:system/lib/libsecureui_svcsock_system.so \
+    vendor/oneplus/cheeseburger/proprietary/lib/libsecureuisvc_jni.so:system/lib/libsecureuisvc_jni.so \
+    vendor/oneplus/cheeseburger/proprietary/lib/libsensor1.so:system/lib/libsensor1.so \
+    vendor/oneplus/cheeseburger/proprietary/lib/libsensor_test.so:system/lib/libsensor_test.so \
+    vendor/oneplus/cheeseburger/proprietary/lib/libsns_low_lat_stream_stub.so:system/lib/libsns_low_lat_stream_stub.so \
+    vendor/oneplus/cheeseburger/proprietary/lib/libvendorconn.so:system/lib/libvendorconn.so \
+    vendor/oneplus/cheeseburger/proprietary/lib/libvr_amb_engine.so:system/lib/libvr_amb_engine.so \
+    vendor/oneplus/cheeseburger/proprietary/lib/libvr_object_engine.so:system/lib/libvr_object_engine.so \
+    vendor/oneplus/cheeseburger/proprietary/lib/libvr_sam_wrapper.so:system/lib/libvr_sam_wrapper.so \
+    vendor/oneplus/cheeseburger/proprietary/lib/libvraudio.so:system/lib/libvraudio.so \
+    vendor/oneplus/cheeseburger/proprietary/lib/libvraudio_client.so:system/lib/libvraudio_client.so \
+    vendor/oneplus/cheeseburger/proprietary/lib/libxt_native.so:system/lib/libxt_native.so \
+    vendor/oneplus/cheeseburger/proprietary/lib/vendor.display.color@1.0.so:system/lib/vendor.display.color@1.0.so \
+    vendor/oneplus/cheeseburger/proprietary/lib/vendor.display.postproc@1.0.so:system/lib/vendor.display.postproc@1.0.so \
+    vendor/oneplus/cheeseburger/proprietary/lib/vendor.qti.esepowermanager@1.0.so:system/lib/vendor.qti.esepowermanager@1.0.so \
+    vendor/oneplus/cheeseburger/proprietary/lib/vendor.qti.gnss@1.0.so:system/lib/vendor.qti.gnss@1.0.so \
+    vendor/oneplus/cheeseburger/proprietary/lib/vendor.qti.hardware.iop@1.0.so:system/lib/vendor.qti.hardware.iop@1.0.so \
+    vendor/oneplus/cheeseburger/proprietary/lib/vendor.qti.hardware.perf@1.0.so:system/lib/vendor.qti.hardware.perf@1.0.so \
+    vendor/oneplus/cheeseburger/proprietary/lib/vendor.qti.hardware.qdutils_disp@1.0.so:system/lib/vendor.qti.hardware.qdutils_disp@1.0.so \
+    vendor/oneplus/cheeseburger/proprietary/lib/vendor.qti.hardware.qteeconnector@1.0.so:system/lib/vendor.qti.hardware.qteeconnector@1.0.so \
+    vendor/oneplus/cheeseburger/proprietary/lib/vendor.qti.hardware.tui_comm@1.0.so:system/lib/vendor.qti.hardware.tui_comm@1.0.so \
+    vendor/oneplus/cheeseburger/proprietary/lib/vendor.qti.hardware.vpp@1.1.so:system/lib/vendor.qti.hardware.vpp@1.1.so \
+    vendor/oneplus/cheeseburger/proprietary/lib/vendor.qti.imsrtpservice@1.0.so:system/lib/vendor.qti.imsrtpservice@1.0.so \
+    vendor/oneplus/cheeseburger/proprietary/lib64/com.qualcomm.qti.dpm.api@1.0.so:system/lib64/com.qualcomm.qti.dpm.api@1.0.so \
+    vendor/oneplus/cheeseburger/proprietary/lib64/com.qualcomm.qti.imscmservice@1.0.so:system/lib64/com.qualcomm.qti.imscmservice@1.0.so \
+    vendor/oneplus/cheeseburger/proprietary/lib64/com.qualcomm.qti.wifidisplayhal@1.0.so:system/lib64/com.qualcomm.qti.wifidisplayhal@1.0.so \
+    vendor/oneplus/cheeseburger/proprietary/lib64/lib-imscamera.so:system/lib64/lib-imscamera.so \
+    vendor/oneplus/cheeseburger/proprietary/lib64/lib-imsvideocodec.so:system/lib64/lib-imsvideocodec.so \
+    vendor/oneplus/cheeseburger/proprietary/lib64/lib-imsvt.so:system/lib64/lib-imsvt.so \
+    vendor/oneplus/cheeseburger/proprietary/lib64/lib-imsvtextutils.so:system/lib64/lib-imsvtextutils.so \
+    vendor/oneplus/cheeseburger/proprietary/lib64/lib-imsvtutils.so:system/lib64/lib-imsvtutils.so \
+    vendor/oneplus/cheeseburger/proprietary/lib64/libGPTEE_system.so:system/lib64/libGPTEE_system.so \
+    vendor/oneplus/cheeseburger/proprietary/lib64/libOmxMux.so:system/lib64/libOmxMux.so \
+    vendor/oneplus/cheeseburger/proprietary/lib64/libQTEEConnector_system.so:system/lib64/libQTEEConnector_system.so \
+    vendor/oneplus/cheeseburger/proprietary/lib64/libdiag_system.so:system/lib64/libdiag_system.so \
+    vendor/oneplus/cheeseburger/proprietary/lib64/libdpmctmgr.so:system/lib64/libdpmctmgr.so \
+    vendor/oneplus/cheeseburger/proprietary/lib64/libdpmfdmgr.so:system/lib64/libdpmfdmgr.so \
+    vendor/oneplus/cheeseburger/proprietary/lib64/libdpmframework.so:system/lib64/libdpmframework.so \
+    vendor/oneplus/cheeseburger/proprietary/lib64/libdpmnsrm.so:system/lib64/libdpmnsrm.so \
+    vendor/oneplus/cheeseburger/proprietary/lib64/libdpmtcm.so:system/lib64/libdpmtcm.so \
+    vendor/oneplus/cheeseburger/proprietary/lib64/libimscamera_jni.so:system/lib64/libimscamera_jni.so \
+    vendor/oneplus/cheeseburger/proprietary/lib64/libimsmedia_jni.so:system/lib64/libimsmedia_jni.so \
+    vendor/oneplus/cheeseburger/proprietary/lib64/liblocationservice_jni.so:system/lib64/liblocationservice_jni.so \
+    vendor/oneplus/cheeseburger/proprietary/lib64/libmmosal.so:system/lib64/libmmosal.so \
+    vendor/oneplus/cheeseburger/proprietary/lib64/libmmrtpdecoder.so:system/lib64/libmmrtpdecoder.so \
+    vendor/oneplus/cheeseburger/proprietary/lib64/libmmrtpencoder.so:system/lib64/libmmrtpencoder.so \
+    vendor/oneplus/cheeseburger/proprietary/lib64/libqmi_cci_system.so:system/lib64/libqmi_cci_system.so \
+    vendor/oneplus/cheeseburger/proprietary/lib64/libqvrcamera_client.so:system/lib64/libqvrcamera_client.so \
+    vendor/oneplus/cheeseburger/proprietary/lib64/libqvrservice_client.so:system/lib64/libqvrservice_client.so \
+    vendor/oneplus/cheeseburger/proprietary/lib64/libqvrservice_hvxcameraclient.so:system/lib64/libqvrservice_hvxcameraclient.so \
+    vendor/oneplus/cheeseburger/proprietary/lib64/libqvrservice_ov7251_hvx_tuning.so:system/lib64/libqvrservice_ov7251_hvx_tuning.so \
+    vendor/oneplus/cheeseburger/proprietary/lib64/libqvrservice_ov9282_hvx_tuning.so:system/lib64/libqvrservice_ov9282_hvx_tuning.so \
+    vendor/oneplus/cheeseburger/proprietary/lib64/librcc.so:system/lib64/librcc.so \
+    vendor/oneplus/cheeseburger/proprietary/lib64/libsd_sdk_display.so:system/lib64/libsd_sdk_display.so \
+    vendor/oneplus/cheeseburger/proprietary/lib64/libsdm-disp-apis.so:system/lib64/libsdm-disp-apis.so \
+    vendor/oneplus/cheeseburger/proprietary/lib64/libsecureui_svcsock_system.so:system/lib64/libsecureui_svcsock_system.so \
+    vendor/oneplus/cheeseburger/proprietary/lib64/libsecureuisvc_jni.so:system/lib64/libsecureuisvc_jni.so \
+    vendor/oneplus/cheeseburger/proprietary/lib64/libsensor1.so:system/lib64/libsensor1.so \
+    vendor/oneplus/cheeseburger/proprietary/lib64/libsensor_test.so:system/lib64/libsensor_test.so \
+    vendor/oneplus/cheeseburger/proprietary/lib64/libsns_low_lat_stream_stub.so:system/lib64/libsns_low_lat_stream_stub.so \
+    vendor/oneplus/cheeseburger/proprietary/lib64/libvendorconn.so:system/lib64/libvendorconn.so \
+    vendor/oneplus/cheeseburger/proprietary/lib64/libvr_amb_engine.so:system/lib64/libvr_amb_engine.so \
+    vendor/oneplus/cheeseburger/proprietary/lib64/libvr_object_engine.so:system/lib64/libvr_object_engine.so \
+    vendor/oneplus/cheeseburger/proprietary/lib64/libvr_sam_wrapper.so:system/lib64/libvr_sam_wrapper.so \
+    vendor/oneplus/cheeseburger/proprietary/lib64/libvraudio.so:system/lib64/libvraudio.so \
+    vendor/oneplus/cheeseburger/proprietary/lib64/libvraudio_client.so:system/lib64/libvraudio_client.so \
+    vendor/oneplus/cheeseburger/proprietary/lib64/libxt_native.so:system/lib64/libxt_native.so \
+    vendor/oneplus/cheeseburger/proprietary/lib64/vendor.display.color@1.0.so:system/lib64/vendor.display.color@1.0.so \
+    vendor/oneplus/cheeseburger/proprietary/lib64/vendor.display.postproc@1.0.so:system/lib64/vendor.display.postproc@1.0.so \
+    vendor/oneplus/cheeseburger/proprietary/lib64/vendor.qti.esepowermanager@1.0.so:system/lib64/vendor.qti.esepowermanager@1.0.so \
+    vendor/oneplus/cheeseburger/proprietary/lib64/vendor.qti.gnss@1.0.so:system/lib64/vendor.qti.gnss@1.0.so \
+    vendor/oneplus/cheeseburger/proprietary/lib64/vendor.qti.hardware.iop@1.0.so:system/lib64/vendor.qti.hardware.iop@1.0.so \
+    vendor/oneplus/cheeseburger/proprietary/lib64/vendor.qti.hardware.perf@1.0.so:system/lib64/vendor.qti.hardware.perf@1.0.so \
+    vendor/oneplus/cheeseburger/proprietary/lib64/vendor.qti.hardware.qdutils_disp@1.0.so:system/lib64/vendor.qti.hardware.qdutils_disp@1.0.so \
+    vendor/oneplus/cheeseburger/proprietary/lib64/vendor.qti.hardware.qteeconnector@1.0.so:system/lib64/vendor.qti.hardware.qteeconnector@1.0.so \
+    vendor/oneplus/cheeseburger/proprietary/lib64/vendor.qti.hardware.tui_comm@1.0.so:system/lib64/vendor.qti.hardware.tui_comm@1.0.so \
+    vendor/oneplus/cheeseburger/proprietary/lib64/vendor.qti.hardware.vpp@1.1.so:system/lib64/vendor.qti.hardware.vpp@1.1.so \
+    vendor/oneplus/cheeseburger/proprietary/lib64/vendor.qti.imsrtpservice@1.0.so:system/lib64/vendor.qti.imsrtpservice@1.0.so \
+    vendor/oneplus/cheeseburger/proprietary/vendor/bin/adsprpcd:system/vendor/bin/adsprpcd \
+    vendor/oneplus/cheeseburger/proprietary/vendor/bin/btnvtool:system/vendor/bin/btnvtool \
+    vendor/oneplus/cheeseburger/proprietary/vendor/bin/cnd:system/vendor/bin/cnd \
+    vendor/oneplus/cheeseburger/proprietary/vendor/bin/cnss-daemon:system/vendor/bin/cnss-daemon \
+    vendor/oneplus/cheeseburger/proprietary/vendor/bin/dpmQmiMgr:system/vendor/bin/dpmQmiMgr \
+    vendor/oneplus/cheeseburger/proprietary/vendor/bin/energy-awareness:system/vendor/bin/energy-awareness \
+    vendor/oneplus/cheeseburger/proprietary/vendor/bin/hci_qcomm_init:system/vendor/bin/hci_qcomm_init \
+    vendor/oneplus/cheeseburger/proprietary/vendor/bin/hw/vendor.display.color@1.0-service:system/vendor/bin/hw/vendor.display.color@1.0-service \
+    vendor/oneplus/cheeseburger/proprietary/vendor/bin/hw/vendor.qti.esepowermanager@1.0-service:system/vendor/bin/hw/vendor.qti.esepowermanager@1.0-service \
+    vendor/oneplus/cheeseburger/proprietary/vendor/bin/hw/vendor.qti.gnss@1.0-service:system/vendor/bin/hw/vendor.qti.gnss@1.0-service \
+    vendor/oneplus/cheeseburger/proprietary/vendor/bin/hw/vendor.qti.hardware.iop@1.0-service:system/vendor/bin/hw/vendor.qti.hardware.iop@1.0-service \
+    vendor/oneplus/cheeseburger/proprietary/vendor/bin/hw/vendor.qti.hardware.perf@1.0-service:system/vendor/bin/hw/vendor.qti.hardware.perf@1.0-service \
+    vendor/oneplus/cheeseburger/proprietary/vendor/bin/hw/vendor.qti.hardware.qdutils_disp@1.0-service-qti:system/vendor/bin/hw/vendor.qti.hardware.qdutils_disp@1.0-service-qti \
+    vendor/oneplus/cheeseburger/proprietary/vendor/bin/hw/vendor.qti.hardware.qteeconnector@1.0-service:system/vendor/bin/hw/vendor.qti.hardware.qteeconnector@1.0-service \
+    vendor/oneplus/cheeseburger/proprietary/vendor/bin/hw/vendor.qti.hardware.tui_comm@1.0-service-qti:system/vendor/bin/hw/vendor.qti.hardware.tui_comm@1.0-service-qti \
+    vendor/oneplus/cheeseburger/proprietary/vendor/bin/ims_rtp_daemon:system/vendor/bin/ims_rtp_daemon \
+    vendor/oneplus/cheeseburger/proprietary/vendor/bin/imsdatadaemon:system/vendor/bin/imsdatadaemon \
+    vendor/oneplus/cheeseburger/proprietary/vendor/bin/imsqmidaemon:system/vendor/bin/imsqmidaemon \
+    vendor/oneplus/cheeseburger/proprietary/vendor/bin/imsrcsd:system/vendor/bin/imsrcsd \
+    vendor/oneplus/cheeseburger/proprietary/vendor/bin/init.qti.ims.sh:system/vendor/bin/init.qti.ims.sh \
+    vendor/oneplus/cheeseburger/proprietary/vendor/bin/irsc_util:system/vendor/bin/irsc_util \
+    vendor/oneplus/cheeseburger/proprietary/vendor/bin/loc_launcher:system/vendor/bin/loc_launcher \
+    vendor/oneplus/cheeseburger/proprietary/vendor/bin/lowi-server:system/vendor/bin/lowi-server \
     vendor/oneplus/cheeseburger/proprietary/vendor/bin/mm-pp-dpps:system/vendor/bin/mm-pp-dpps \
+    vendor/oneplus/cheeseburger/proprietary/vendor/bin/msm_irqbalance:system/vendor/bin/msm_irqbalance \
+    vendor/oneplus/cheeseburger/proprietary/vendor/bin/netmgrd:system/vendor/bin/netmgrd \
     vendor/oneplus/cheeseburger/proprietary/vendor/bin/pd-mapper:system/vendor/bin/pd-mapper \
-    vendor/oneplus/cheeseburger/proprietary/vendor/bin/qseeproxydaemon:system/vendor/bin/qseeproxydaemon \
+    vendor/oneplus/cheeseburger/proprietary/vendor/bin/pm-proxy:system/vendor/bin/pm-proxy \
+    vendor/oneplus/cheeseburger/proprietary/vendor/bin/pm-service:system/vendor/bin/pm-service \
+    vendor/oneplus/cheeseburger/proprietary/vendor/bin/qseecomd:system/vendor/bin/qseecomd \
     vendor/oneplus/cheeseburger/proprietary/vendor/bin/qti:system/vendor/bin/qti \
+    vendor/oneplus/cheeseburger/proprietary/vendor/bin/qvop-daemon:system/vendor/bin/qvop-daemon \
+    vendor/oneplus/cheeseburger/proprietary/vendor/bin/rmt_storage:system/vendor/bin/rmt_storage \
+    vendor/oneplus/cheeseburger/proprietary/vendor/bin/sensors.qcom:system/vendor/bin/sensors.qcom \
     vendor/oneplus/cheeseburger/proprietary/vendor/bin/slim_daemon:system/vendor/bin/slim_daemon \
+    vendor/oneplus/cheeseburger/proprietary/vendor/bin/tftp_server:system/vendor/bin/tftp_server \
     vendor/oneplus/cheeseburger/proprietary/vendor/bin/thermal-engine:system/vendor/bin/thermal-engine \
+    vendor/oneplus/cheeseburger/proprietary/vendor/bin/time_daemon:system/vendor/bin/time_daemon \
+    vendor/oneplus/cheeseburger/proprietary/vendor/bin/wcnss_filter:system/vendor/bin/wcnss_filter \
+    vendor/oneplus/cheeseburger/proprietary/vendor/bin/xtra-daemon:system/vendor/bin/xtra-daemon \
+    vendor/oneplus/cheeseburger/proprietary/vendor/bin/xtwifi-client:system/vendor/bin/xtwifi-client \
+    vendor/oneplus/cheeseburger/proprietary/vendor/bin/xtwifi-inet-agent:system/vendor/bin/xtwifi-inet-agent \
+    vendor/oneplus/cheeseburger/proprietary/vendor/etc/cne/wqeclient/ATT/ATT_profile1.xml:system/vendor/etc/cne/wqeclient/ATT/ATT_profile1.xml \
+    vendor/oneplus/cheeseburger/proprietary/vendor/etc/cne/wqeclient/ATT/ATT_profile2.xml:system/vendor/etc/cne/wqeclient/ATT/ATT_profile2.xml \
+    vendor/oneplus/cheeseburger/proprietary/vendor/etc/cne/wqeclient/ATT/ATT_profile3.xml:system/vendor/etc/cne/wqeclient/ATT/ATT_profile3.xml \
+    vendor/oneplus/cheeseburger/proprietary/vendor/etc/cne/wqeclient/ATT/ATT_profile4.xml:system/vendor/etc/cne/wqeclient/ATT/ATT_profile4.xml \
+    vendor/oneplus/cheeseburger/proprietary/vendor/etc/cne/wqeclient/ROW/ROW_profile1.xml:system/vendor/etc/cne/wqeclient/ROW/ROW_profile1.xml \
+    vendor/oneplus/cheeseburger/proprietary/vendor/etc/cne/wqeclient/ROW/ROW_profile2.xml:system/vendor/etc/cne/wqeclient/ROW/ROW_profile2.xml \
+    vendor/oneplus/cheeseburger/proprietary/vendor/etc/cne/wqeclient/ROW/ROW_profile3.xml:system/vendor/etc/cne/wqeclient/ROW/ROW_profile3.xml \
+    vendor/oneplus/cheeseburger/proprietary/vendor/etc/cne/wqeclient/ROW/ROW_profile4.xml:system/vendor/etc/cne/wqeclient/ROW/ROW_profile4.xml \
+    vendor/oneplus/cheeseburger/proprietary/vendor/etc/cne/wqeclient/ROW/ROW_profile5.xml:system/vendor/etc/cne/wqeclient/ROW/ROW_profile5.xml \
+    vendor/oneplus/cheeseburger/proprietary/vendor/etc/cne/wqeclient/VZW/VZW_profile1.xml:system/vendor/etc/cne/wqeclient/VZW/VZW_profile1.xml \
+    vendor/oneplus/cheeseburger/proprietary/vendor/etc/cne/wqeclient/VZW/VZW_profile2.xml:system/vendor/etc/cne/wqeclient/VZW/VZW_profile2.xml \
+    vendor/oneplus/cheeseburger/proprietary/vendor/etc/cne/wqeclient/VZW/VZW_profile3.xml:system/vendor/etc/cne/wqeclient/VZW/VZW_profile3.xml \
+    vendor/oneplus/cheeseburger/proprietary/vendor/etc/cne/wqeclient/VZW/VZW_profile4.xml:system/vendor/etc/cne/wqeclient/VZW/VZW_profile4.xml \
+    vendor/oneplus/cheeseburger/proprietary/vendor/etc/cne/wqeclient/VZW/VZW_profile5.xml:system/vendor/etc/cne/wqeclient/VZW/VZW_profile5.xml \
+    vendor/oneplus/cheeseburger/proprietary/vendor/etc/cne/wqeclient/VZW/VZW_profile6.xml:system/vendor/etc/cne/wqeclient/VZW/VZW_profile6.xml \
+    vendor/oneplus/cheeseburger/proprietary/vendor/etc/data/dsi_config.xml:system/vendor/etc/data/dsi_config.xml \
+    vendor/oneplus/cheeseburger/proprietary/vendor/etc/data/netmgr_config.xml:system/vendor/etc/data/netmgr_config.xml \
+    vendor/oneplus/cheeseburger/proprietary/vendor/etc/diracvdd.bin:system/vendor/etc/diracvdd.bin \
+    vendor/oneplus/cheeseburger/proprietary/vendor/etc/init/com.qualcomm.qti.wifidisplayhal@1.0-service.rc:system/vendor/etc/init/com.qualcomm.qti.wifidisplayhal@1.0-service.rc \
+    vendor/oneplus/cheeseburger/proprietary/vendor/etc/init/vendor.display.color@1.0-service.rc:system/vendor/etc/init/vendor.display.color@1.0-service.rc \
+    vendor/oneplus/cheeseburger/proprietary/vendor/etc/init/vendor.qti.esepowermanager@1.0-service.rc:system/vendor/etc/init/vendor.qti.esepowermanager@1.0-service.rc \
+    vendor/oneplus/cheeseburger/proprietary/vendor/etc/init/vendor.qti.gnss@1.0-service.rc:system/vendor/etc/init/vendor.qti.gnss@1.0-service.rc \
+    vendor/oneplus/cheeseburger/proprietary/vendor/etc/init/vendor.qti.hardware.iop@1.0-service.rc:system/vendor/etc/init/vendor.qti.hardware.iop@1.0-service.rc \
+    vendor/oneplus/cheeseburger/proprietary/vendor/etc/init/vendor.qti.hardware.perf@1.0-service.rc:system/vendor/etc/init/vendor.qti.hardware.perf@1.0-service.rc \
+    vendor/oneplus/cheeseburger/proprietary/vendor/etc/init/vendor.qti.hardware.qdutils_disp@1.0-service-qti.rc:system/vendor/etc/init/vendor.qti.hardware.qdutils_disp@1.0-service-qti.rc \
+    vendor/oneplus/cheeseburger/proprietary/vendor/etc/init/vendor.qti.hardware.qteeconnector@1.0-service.rc:system/vendor/etc/init/vendor.qti.hardware.qteeconnector@1.0-service.rc \
+    vendor/oneplus/cheeseburger/proprietary/vendor/etc/init/vendor.qti.hardware.tui_comm@1.0-service-qti.rc:system/vendor/etc/init/vendor.qti.hardware.tui_comm@1.0-service-qti.rc \
+    vendor/oneplus/cheeseburger/proprietary/vendor/etc/qvr/qvrservice_6dof_config.xml:system/vendor/etc/qvr/qvrservice_6dof_config.xml \
+    vendor/oneplus/cheeseburger/proprietary/vendor/etc/qvr/qvrservice_6dof_config_stereo.xml:system/vendor/etc/qvr/qvrservice_6dof_config_stereo.xml \
+    vendor/oneplus/cheeseburger/proprietary/vendor/etc/qvr/qvrservice_config.txt:system/vendor/etc/qvr/qvrservice_config.txt \
+    vendor/oneplus/cheeseburger/proprietary/vendor/etc/xtra_root_cert.pem:system/vendor/etc/xtra_root_cert.pem \
     vendor/oneplus/cheeseburger/proprietary/vendor/framework/qti-vzw-ims-internal.jar:system/vendor/framework/qti-vzw-ims-internal.jar \
+    vendor/oneplus/cheeseburger/proprietary/vendor/framework/vendor.qti.hardware.alarm-V1.0-java.jar:system/vendor/framework/vendor.qti.hardware.alarm-V1.0-java.jar \
+    vendor/oneplus/cheeseburger/proprietary/vendor/lib/com.qualcomm.qti.dpm.api@1.0_vendor.so:system/vendor/lib/com.qualcomm.qti.dpm.api@1.0_vendor.so \
+    vendor/oneplus/cheeseburger/proprietary/vendor/lib/com.qualcomm.qti.wifidisplayhal@1.0-halimpl.so:system/vendor/lib/com.qualcomm.qti.wifidisplayhal@1.0-halimpl.so \
+    vendor/oneplus/cheeseburger/proprietary/vendor/lib/com.qualcomm.qti.wifidisplayhal@1.0-impl.so:system/vendor/lib/com.qualcomm.qti.wifidisplayhal@1.0-impl.so \
+    vendor/oneplus/cheeseburger/proprietary/vendor/lib/com.qualcomm.qti.wifidisplayhal@1.0_vendor.so:system/vendor/lib/com.qualcomm.qti.wifidisplayhal@1.0_vendor.so \
+    vendor/oneplus/cheeseburger/proprietary/vendor/lib/com.quicinc.cne.api@1.0.so:system/vendor/lib/com.quicinc.cne.api@1.0.so \
+    vendor/oneplus/cheeseburger/proprietary/vendor/lib/com.quicinc.cne.constants@1.0.so:system/vendor/lib/com.quicinc.cne.constants@1.0.so \
+    vendor/oneplus/cheeseburger/proprietary/vendor/lib/com.quicinc.cne.constants@2.0.so:system/vendor/lib/com.quicinc.cne.constants@2.0.so \
+    vendor/oneplus/cheeseburger/proprietary/vendor/lib/com.quicinc.cne.server@1.0.so:system/vendor/lib/com.quicinc.cne.server@1.0.so \
+    vendor/oneplus/cheeseburger/proprietary/vendor/lib/com.quicinc.cne.server@2.0.so:system/vendor/lib/com.quicinc.cne.server@2.0.so \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib/egl/eglSubDriverAndroid.so:system/vendor/lib/egl/eglSubDriverAndroid.so \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib/egl/libEGL_adreno.so:system/vendor/lib/egl/libEGL_adreno.so \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib/egl/libGLESv1_CM_adreno.so:system/vendor/lib/egl/libGLESv1_CM_adreno.so \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib/egl/libGLESv2_adreno.so:system/vendor/lib/egl/libGLESv2_adreno.so \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib/egl/libQTapGLES.so:system/vendor/lib/egl/libQTapGLES.so \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib/egl/libq3dtools_adreno.so:system/vendor/lib/egl/libq3dtools_adreno.so \
+    vendor/oneplus/cheeseburger/proprietary/vendor/lib/egl/libq3dtools_esx.so:system/vendor/lib/egl/libq3dtools_esx.so \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib/hw/activity_recognition.msm8998.so:system/vendor/lib/hw/activity_recognition.msm8998.so \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib/hw/gatekeeper.msm8998.so:system/vendor/lib/hw/gatekeeper.msm8998.so \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib/hw/keystore.msm8998.so:system/vendor/lib/hw/keystore.msm8998.so \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib/hw/sound_trigger.primary.msm8998.so:system/vendor/lib/hw/sound_trigger.primary.msm8998.so \
+    vendor/oneplus/cheeseburger/proprietary/vendor/lib/hw/thermal.msm8998.so:system/vendor/lib/hw/thermal.msm8998.so \
+    vendor/oneplus/cheeseburger/proprietary/vendor/lib/hw/vendor.qti.esepowermanager@1.0-impl.so:system/vendor/lib/hw/vendor.qti.esepowermanager@1.0-impl.so \
+    vendor/oneplus/cheeseburger/proprietary/vendor/lib/hw/vendor.qti.gnss@1.0-impl.so:system/vendor/lib/hw/vendor.qti.gnss@1.0-impl.so \
+    vendor/oneplus/cheeseburger/proprietary/vendor/lib/hw/vendor.qti.hardware.iop@1.0-impl.so:system/vendor/lib/hw/vendor.qti.hardware.iop@1.0-impl.so \
+    vendor/oneplus/cheeseburger/proprietary/vendor/lib/hw/vendor.qti.hardware.qteeconnector@1.0-impl.so:system/vendor/lib/hw/vendor.qti.hardware.qteeconnector@1.0-impl.so \
+    vendor/oneplus/cheeseburger/proprietary/vendor/lib/hw/vr.msm8998.so:system/vendor/lib/hw/vr.msm8998.so \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib/hw/vulkan.msm8998.so:system/vendor/lib/hw/vulkan.msm8998.so \
+    vendor/oneplus/cheeseburger/proprietary/vendor/lib/lib-imscmservice.so:system/vendor/lib/lib-imscmservice.so \
+    vendor/oneplus/cheeseburger/proprietary/vendor/lib/lib-imsdpl.so:system/vendor/lib/lib-imsdpl.so \
+    vendor/oneplus/cheeseburger/proprietary/vendor/lib/lib-imsqimf.so:system/vendor/lib/lib-imsqimf.so \
+    vendor/oneplus/cheeseburger/proprietary/vendor/lib/lib-imsrcs-v2.so:system/vendor/lib/lib-imsrcs-v2.so \
+    vendor/oneplus/cheeseburger/proprietary/vendor/lib/lib-imsxml.so:system/vendor/lib/lib-imsxml.so \
+    vendor/oneplus/cheeseburger/proprietary/vendor/lib/lib-rtpcore.so:system/vendor/lib/lib-rtpcore.so \
+    vendor/oneplus/cheeseburger/proprietary/vendor/lib/lib-rtpdaemoninterface.so:system/vendor/lib/lib-rtpdaemoninterface.so \
+    vendor/oneplus/cheeseburger/proprietary/vendor/lib/lib-rtpsl.so:system/vendor/lib/lib-rtpsl.so \
+    vendor/oneplus/cheeseburger/proprietary/vendor/lib/lib-uceservice.so:system/vendor/lib/lib-uceservice.so \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib/libC2D2.so:system/vendor/lib/libC2D2.so \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib/libCB.so:system/vendor/lib/libCB.so \
+    vendor/oneplus/cheeseburger/proprietary/vendor/lib/libGPTEE_vendor.so:system/vendor/lib/libGPTEE_vendor.so \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib/libI420colorconvert.so:system/vendor/lib/libI420colorconvert.so \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib/libOmxAacDec.so:system/vendor/lib/libOmxAacDec.so \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib/libOmxEvrcDec.so:system/vendor/lib/libOmxEvrcDec.so \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib/libOmxQcelp13Dec.so:system/vendor/lib/libOmxQcelp13Dec.so \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib/libOmxVideoDSMode.so:system/vendor/lib/libOmxVideoDSMode.so \
+    vendor/oneplus/cheeseburger/proprietary/vendor/lib/libOmxVpp.so:system/vendor/lib/libOmxVpp.so \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib/libOpenCL.so:system/vendor/lib/libOpenCL.so \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib/libQSEEComAPI.so:system/vendor/lib/libQSEEComAPI.so \
+    vendor/oneplus/cheeseburger/proprietary/vendor/lib/libQTEEConnector_vendor.so:system/vendor/lib/libQTEEConnector_vendor.so \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib/libRSDriver_adreno.so:system/vendor/lib/libRSDriver_adreno.so \
-    vendor/oneplus/cheeseburger/proprietary/vendor/lib/libTimeService.so:system/vendor/lib/libTimeService.so \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib/libWVStreamControlAPI_L3.so:system/vendor/lib/libWVStreamControlAPI_L3.so \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib/libacdb-fts.so:system/vendor/lib/libacdb-fts.so \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib/libacdbloader.so:system/vendor/lib/libacdbloader.so \
@@ -487,33 +761,41 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib/libadsprpc.so:system/vendor/lib/libadsprpc.so \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib/libaudcal.so:system/vendor/lib/libaudcal.so \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib/libbccQTI.so:system/vendor/lib/libbccQTI.so \
+    vendor/oneplus/cheeseburger/proprietary/vendor/lib/libc2d30-a3xx.so:system/vendor/lib/libc2d30-a3xx.so \
+    vendor/oneplus/cheeseburger/proprietary/vendor/lib/libc2d30-a4xx.so:system/vendor/lib/libc2d30-a4xx.so \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib/libc2d30-a5xx.so:system/vendor/lib/libc2d30-a5xx.so \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib/libc2d30_bltlib.so:system/vendor/lib/libc2d30_bltlib.so \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib/libcne.so:system/vendor/lib/libcne.so \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib/libcneapiclient.so:system/vendor/lib/libcneapiclient.so \
+    vendor/oneplus/cheeseburger/proprietary/vendor/lib/libcneoplookup.so:system/vendor/lib/libcneoplookup.so \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib/libcneqmiutils.so:system/vendor/lib/libcneqmiutils.so \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib/libdiag.so:system/vendor/lib/libdiag.so \
-    vendor/oneplus/cheeseburger/proprietary/vendor/lib/libdpmctmgr.so:system/vendor/lib/libdpmctmgr.so \
-    vendor/oneplus/cheeseburger/proprietary/vendor/lib/libdpmfdmgr.so:system/vendor/lib/libdpmfdmgr.so \
-    vendor/oneplus/cheeseburger/proprietary/vendor/lib/libdpmframework.so:system/vendor/lib/libdpmframework.so \
-    vendor/oneplus/cheeseburger/proprietary/vendor/lib/libdpmnsrm.so:system/vendor/lib/libdpmnsrm.so \
-    vendor/oneplus/cheeseburger/proprietary/vendor/lib/libdpmtcm.so:system/vendor/lib/libdpmtcm.so \
+    vendor/oneplus/cheeseburger/proprietary/vendor/lib/libdpmqmihal.so:system/vendor/lib/libdpmqmihal.so \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib/libdsi_netctrl.so:system/vendor/lib/libdsi_netctrl.so \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib/libdsutils.so:system/vendor/lib/libdsutils.so \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib/libfastcvadsp_stub.so:system/vendor/lib/libfastcvadsp_stub.so \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib/libfastcvopt.so:system/vendor/lib/libfastcvopt.so \
+    vendor/oneplus/cheeseburger/proprietary/vendor/lib/libgnsspps.so:system/vendor/lib/libgnsspps.so \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib/libgsl.so:system/vendor/lib/libgsl.so \
-    vendor/oneplus/cheeseburger/proprietary/vendor/lib/libhwdaphal.so:system/vendor/lib/libhwdaphal.so \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib/libidl.so:system/vendor/lib/libidl.so \
+    vendor/oneplus/cheeseburger/proprietary/vendor/lib/libkeymasterdeviceutils.so:system/vendor/lib/libkeymasterdeviceutils.so \
+    vendor/oneplus/cheeseburger/proprietary/vendor/lib/libkeymasterprovision.so:system/vendor/lib/libkeymasterprovision.so \
+    vendor/oneplus/cheeseburger/proprietary/vendor/lib/libkeymasterutils.so:system/vendor/lib/libkeymasterutils.so \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib/libllvm-glnext.so:system/vendor/lib/libllvm-glnext.so \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib/libllvm-qcom.so:system/vendor/lib/libllvm-qcom.so \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib/libllvm-qgl.so:system/vendor/lib/libllvm-qgl.so \
+    vendor/oneplus/cheeseburger/proprietary/vendor/lib/libloc_ds_api.so:system/vendor/lib/libloc_ds_api.so \
+    vendor/oneplus/cheeseburger/proprietary/vendor/lib/libloc_externalDr.so:system/vendor/lib/libloc_externalDr.so \
+    vendor/oneplus/cheeseburger/proprietary/vendor/lib/liblocationservice.so:system/vendor/lib/liblocationservice.so \
+    vendor/oneplus/cheeseburger/proprietary/vendor/lib/liblocationservice_glue.so:system/vendor/lib/liblocationservice_glue.so \
+    vendor/oneplus/cheeseburger/proprietary/vendor/lib/liblowi_client.so:system/vendor/lib/liblowi_client.so \
+    vendor/oneplus/cheeseburger/proprietary/vendor/lib/liblowi_wifihal.so:system/vendor/lib/liblowi_wifihal.so \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib/libmdmdetect.so:system/vendor/lib/libmdmdetect.so \
-    vendor/oneplus/cheeseburger/proprietary/vendor/lib/libmiracast.so:system/vendor/lib/libmiracast.so \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib/libmm-color-convertor.so:system/vendor/lib/libmm-color-convertor.so \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib/libmm-disp-apis.so:system/vendor/lib/libmm-disp-apis.so \
+    vendor/oneplus/cheeseburger/proprietary/vendor/lib/libmm-hdcpmgr.so:system/vendor/lib/libmm-hdcpmgr.so \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib/libmm-qdcm.so:system/vendor/lib/libmm-qdcm.so \
-    vendor/oneplus/cheeseburger/proprietary/vendor/lib/libmmosal.so:system/vendor/lib/libmmosal.so \
+    vendor/oneplus/cheeseburger/proprietary/vendor/lib/libmmosal_proprietary.so:system/vendor/lib/libmmosal_proprietary.so \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib/libperipheral_client.so:system/vendor/lib/libperipheral_client.so \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib/libqcci_legacy.so:system/vendor/lib/libqcci_legacy.so \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib/libqdi.so:system/vendor/lib/libqdi.so \
@@ -527,33 +809,44 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib/libqmi_encdec.so:system/vendor/lib/libqmi_encdec.so \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib/libqmiservices.so:system/vendor/lib/libqmiservices.so \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib/libqseed3.so:system/vendor/lib/libqseed3.so \
+    vendor/oneplus/cheeseburger/proprietary/vendor/lib/libqtigef.so:system/vendor/lib/libqtigef.so \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib/libqvop-service.so:system/vendor/lib/libqvop-service.so \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib/librs_adreno.so:system/vendor/lib/librs_adreno.so \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib/librs_adreno_sha1.so:system/vendor/lib/librs_adreno_sha1.so \
-    vendor/oneplus/cheeseburger/proprietary/vendor/lib/libsd_sdk_display.so:system/vendor/lib/libsd_sdk_display.so \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib/libsdm-color.so:system/vendor/lib/libsdm-color.so \
+    vendor/oneplus/cheeseburger/proprietary/vendor/lib/libsdm-diag.so:system/vendor/lib/libsdm-diag.so \
+    vendor/oneplus/cheeseburger/proprietary/vendor/lib/libsdm-disp-vndapis.so:system/vendor/lib/libsdm-disp-vndapis.so \
+    vendor/oneplus/cheeseburger/proprietary/vendor/lib/libsdmextension.so:system/vendor/lib/libsdmextension.so \
+    vendor/oneplus/cheeseburger/proprietary/vendor/lib/libsecureui.so:system/vendor/lib/libsecureui.so \
+    vendor/oneplus/cheeseburger/proprietary/vendor/lib/libsecureui_svcsock.so:system/vendor/lib/libsecureui_svcsock.so \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib/libsensor1.so:system/vendor/lib/libsensor1.so \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib/libsensor_reg.so:system/vendor/lib/libsensor_reg.so \
-    vendor/oneplus/cheeseburger/proprietary/vendor/lib/libsensor_test.so:system/vendor/lib/libsensor_test.so \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib/libsensor_thresh.so:system/vendor/lib/libsensor_thresh.so \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib/libsensor_user_cal.so:system/vendor/lib/libsensor_user_cal.so \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib/libsmemlog.so:system/vendor/lib/libsmemlog.so \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib/libsmwrapper.so:system/vendor/lib/libsmwrapper.so \
+    vendor/oneplus/cheeseburger/proprietary/vendor/lib/libsns_low_lat_stream_stub.so:system/vendor/lib/libsns_low_lat_stream_stub.so \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib/libspl.so:system/vendor/lib/libspl.so \
-    vendor/oneplus/cheeseburger/proprietary/vendor/lib/libtinyxml2_1.so:system/vendor/lib/libtinyxml2_1.so \
-    vendor/oneplus/cheeseburger/proprietary/vendor/lib/libvendorconn.so:system/vendor/lib/libvendorconn.so \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib/libvpphvx.so:system/vendor/lib/libvpphvx.so \
+    vendor/oneplus/cheeseburger/proprietary/vendor/lib/libvpplibrary.so:system/vendor/lib/libvpplibrary.so \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib/libvqzip.so:system/vendor/lib/libvqzip.so \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib/libwms.so:system/vendor/lib/libwms.so \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib/libwqe.so:system/vendor/lib/libwqe.so \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib/libwvdrm_L3.so:system/vendor/lib/libwvdrm_L3.so \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib/libxml.so:system/vendor/lib/libxml.so \
+    vendor/oneplus/cheeseburger/proprietary/vendor/lib/libxtadapter.so:system/vendor/lib/libxtadapter.so \
+    vendor/oneplus/cheeseburger/proprietary/vendor/lib/libxtwifi_ulp_adaptor.so:system/vendor/lib/libxtwifi_ulp_adaptor.so \
+    vendor/oneplus/cheeseburger/proprietary/vendor/lib/mediadrm/libdrmclearkeyplugin.so:system/vendor/lib/mediadrm/libdrmclearkeyplugin.so \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib/mediadrm/libwvdrmengine.so:system/vendor/lib/mediadrm/libwvdrmengine.so \
+    vendor/oneplus/cheeseburger/proprietary/vendor/lib/qcdrm/playready/lib/drm/libdrmprplugin_customer.so:system/vendor/lib/qcdrm/playready/lib/drm/libdrmprplugin_customer.so \
+    vendor/oneplus/cheeseburger/proprietary/vendor/lib/qcdrm/playready/lib/libprdrmdecrypt_customer.so:system/vendor/lib/qcdrm/playready/lib/libprdrmdecrypt_customer.so \
+    vendor/oneplus/cheeseburger/proprietary/vendor/lib/qcdrm/playready/lib/libtzplayready_customer.so:system/vendor/lib/qcdrm/playready/lib/libtzplayready_customer.so \
+    vendor/oneplus/cheeseburger/proprietary/vendor/lib/qcdrm/playready/lib/mediadrm/libprmediadrmdecrypt_customer.so:system/vendor/lib/qcdrm/playready/lib/mediadrm/libprmediadrmdecrypt_customer.so \
+    vendor/oneplus/cheeseburger/proprietary/vendor/lib/qcdrm/playready/lib/mediadrm/libprmediadrmplugin_customer.so:system/vendor/lib/qcdrm/playready/lib/mediadrm/libprmediadrmplugin_customer.so \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib/rfsa/adsp/capi_v2_aptX_Classic.so:system/vendor/lib/rfsa/adsp/capi_v2_aptX_Classic.so \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib/rfsa/adsp/capi_v2_aptX_HD.so:system/vendor/lib/rfsa/adsp/capi_v2_aptX_HD.so \
-    vendor/oneplus/cheeseburger/proprietary/vendor/lib/rfsa/adsp/libAudienceAZA.so:system/vendor/lib/rfsa/adsp/libAudienceAZA.so \
+    vendor/oneplus/cheeseburger/proprietary/vendor/lib/rfsa/adsp/libCpDspFunctions_skel.so:system/vendor/lib/rfsa/adsp/libCpDspFunctions_skel.so \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib/rfsa/adsp/libFastRPC_AUE_Forward_skel.so:system/vendor/lib/rfsa/adsp/libFastRPC_AUE_Forward_skel.so \
-    vendor/oneplus/cheeseburger/proprietary/vendor/lib/rfsa/adsp/libFastRPC_UTF_Forward_800h_skel.so:system/vendor/lib/rfsa/adsp/libFastRPC_UTF_Forward_800h_skel.so \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib/rfsa/adsp/libFastRPC_UTF_Forward_Qtc2_skel.so:system/vendor/lib/rfsa/adsp/libFastRPC_UTF_Forward_Qtc2_skel.so \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib/rfsa/adsp/libFastRPC_UTF_Forward_skel.so:system/vendor/lib/rfsa/adsp/libFastRPC_UTF_Forward_skel.so \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib/rfsa/adsp/libadsp_fd_skel.so:system/vendor/lib/rfsa/adsp/libadsp_fd_skel.so \
@@ -562,73 +855,107 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib/rfsa/adsp/libapps_mem_heap.so:system/vendor/lib/rfsa/adsp/libapps_mem_heap.so \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib/rfsa/adsp/libdirac_capiv2.so:system/vendor/lib/rfsa/adsp/libdirac_capiv2.so \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib/rfsa/adsp/libdspCV_skel.so:system/vendor/lib/rfsa/adsp/libdspCV_skel.so \
-    vendor/oneplus/cheeseburger/proprietary/vendor/lib/rfsa/adsp/libedge_smooth_skel.so:system/vendor/lib/rfsa/adsp/libedge_smooth_skel.so \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib/rfsa/adsp/libfastcvadsp.so:system/vendor/lib/rfsa/adsp/libfastcvadsp.so \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib/rfsa/adsp/libfastcvadsp_skel.so:system/vendor/lib/rfsa/adsp/libfastcvadsp_skel.so \
-    vendor/oneplus/cheeseburger/proprietary/vendor/lib/rfsa/adsp/libobjectMattingApp_skel.so:system/vendor/lib/rfsa/adsp/libobjectMattingApp_skel.so \
-    vendor/oneplus/cheeseburger/proprietary/vendor/lib/rfsa/adsp/libqvr_adsp_driver_skel.so:system/vendor/lib/rfsa/adsp/libqvr_adsp_driver_skel.so \
+    vendor/oneplus/cheeseburger/proprietary/vendor/lib/rfsa/adsp/libhvxMathVIO.so:system/vendor/lib/rfsa/adsp/libhvxMathVIO.so \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib/rfsa/adsp/libscveBlobDescriptor_skel.so:system/vendor/lib/rfsa/adsp/libscveBlobDescriptor_skel.so \
-    vendor/oneplus/cheeseburger/proprietary/vendor/lib/rfsa/adsp/libscveCleverCapture_skel.so:system/vendor/lib/rfsa/adsp/libscveCleverCapture_skel.so \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib/rfsa/adsp/libscveFaceLandmark_skel.so:system/vendor/lib/rfsa/adsp/libscveFaceLandmark_skel.so \
-    vendor/oneplus/cheeseburger/proprietary/vendor/lib/rfsa/adsp/libscveFaceRecognition_skel.so:system/vendor/lib/rfsa/adsp/libscveFaceRecognition_skel.so \
-    vendor/oneplus/cheeseburger/proprietary/vendor/lib/rfsa/adsp/libscveObjectSegmentation_skel.so:system/vendor/lib/rfsa/adsp/libscveObjectSegmentation_skel.so \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib/rfsa/adsp/libscveT2T_skel.so:system/vendor/lib/rfsa/adsp/libscveT2T_skel.so \
-    vendor/oneplus/cheeseburger/proprietary/vendor/lib/rfsa/adsp/libscveTextReco_skel.so:system/vendor/lib/rfsa/adsp/libscveTextReco_skel.so \
-    vendor/oneplus/cheeseburger/proprietary/vendor/lib/rfsa/adsp/libscveVideoSummary_skel.so:system/vendor/lib/rfsa/adsp/libscveVideoSummary_skel.so \
+    vendor/oneplus/cheeseburger/proprietary/vendor/lib/rfsa/adsp/libsns_low_lat_stream_skel.so:system/vendor/lib/rfsa/adsp/libsns_low_lat_stream_skel.so \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib/rfsa/adsp/libvpp_frc.so:system/vendor/lib/rfsa/adsp/libvpp_frc.so \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib/rfsa/adsp/libvpp_svc_skel.so:system/vendor/lib/rfsa/adsp/libvpp_svc_skel.so \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib/sensor_calibrate.so:system/vendor/lib/sensor_calibrate.so \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib/sensors.ssc.so:system/vendor/lib/sensors.ssc.so \
+    vendor/oneplus/cheeseburger/proprietary/vendor/lib/soundfx/libasphere.so:system/vendor/lib/soundfx/libasphere.so \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib/soundfx/libqcbassboost.so:system/vendor/lib/soundfx/libqcbassboost.so \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib/soundfx/libqcreverb.so:system/vendor/lib/soundfx/libqcreverb.so \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib/soundfx/libqcvirt.so:system/vendor/lib/soundfx/libqcvirt.so \
+    vendor/oneplus/cheeseburger/proprietary/vendor/lib/vendor.display.color@1.0_vendor.so:system/vendor/lib/vendor.display.color@1.0_vendor.so \
+    vendor/oneplus/cheeseburger/proprietary/vendor/lib/vendor.display.postproc@1.0_vendor.so:system/vendor/lib/vendor.display.postproc@1.0_vendor.so \
+    vendor/oneplus/cheeseburger/proprietary/vendor/lib/vendor.qti.esepowermanager@1.0_vendor.so:system/vendor/lib/vendor.qti.esepowermanager@1.0_vendor.so \
+    vendor/oneplus/cheeseburger/proprietary/vendor/lib/vendor.qti.gnss@1.0_vendor.so:system/vendor/lib/vendor.qti.gnss@1.0_vendor.so \
+    vendor/oneplus/cheeseburger/proprietary/vendor/lib/vendor.qti.hardware.alarm@1.0.so:system/vendor/lib/vendor.qti.hardware.alarm@1.0.so \
+    vendor/oneplus/cheeseburger/proprietary/vendor/lib/vendor.qti.hardware.fingerprint@1.0.so:system/vendor/lib/vendor.qti.hardware.fingerprint@1.0.so \
+    vendor/oneplus/cheeseburger/proprietary/vendor/lib/vendor.qti.hardware.iop@1.0_vendor.so:system/vendor/lib/vendor.qti.hardware.iop@1.0_vendor.so \
+    vendor/oneplus/cheeseburger/proprietary/vendor/lib/vendor.qti.hardware.perf@1.0_vendor.so:system/vendor/lib/vendor.qti.hardware.perf@1.0_vendor.so \
+    vendor/oneplus/cheeseburger/proprietary/vendor/lib/vendor.qti.hardware.qdutils_disp@1.0_vendor.so:system/vendor/lib/vendor.qti.hardware.qdutils_disp@1.0_vendor.so \
+    vendor/oneplus/cheeseburger/proprietary/vendor/lib/vendor.qti.hardware.qteeconnector@1.0_vendor.so:system/vendor/lib/vendor.qti.hardware.qteeconnector@1.0_vendor.so \
+    vendor/oneplus/cheeseburger/proprietary/vendor/lib/vendor.qti.hardware.radio.am@1.0_vendor.so:system/vendor/lib/vendor.qti.hardware.radio.am@1.0_vendor.so \
+    vendor/oneplus/cheeseburger/proprietary/vendor/lib/vendor.qti.hardware.radio.atcmdfwd@1.0_vendor.so:system/vendor/lib/vendor.qti.hardware.radio.atcmdfwd@1.0_vendor.so \
+    vendor/oneplus/cheeseburger/proprietary/vendor/lib/vendor.qti.hardware.radio.ims@1.0_vendor.so:system/vendor/lib/vendor.qti.hardware.radio.ims@1.0_vendor.so \
+    vendor/oneplus/cheeseburger/proprietary/vendor/lib/vendor.qti.hardware.radio.lpa@1.0_vendor.so:system/vendor/lib/vendor.qti.hardware.radio.lpa@1.0_vendor.so \
+    vendor/oneplus/cheeseburger/proprietary/vendor/lib/vendor.qti.hardware.radio.qcrilhook@1.0_vendor.so:system/vendor/lib/vendor.qti.hardware.radio.qcrilhook@1.0_vendor.so \
+    vendor/oneplus/cheeseburger/proprietary/vendor/lib/vendor.qti.hardware.radio.qtiradio@1.0_vendor.so:system/vendor/lib/vendor.qti.hardware.radio.qtiradio@1.0_vendor.so \
+    vendor/oneplus/cheeseburger/proprietary/vendor/lib/vendor.qti.hardware.radio.uim@1.0_vendor.so:system/vendor/lib/vendor.qti.hardware.radio.uim@1.0_vendor.so \
+    vendor/oneplus/cheeseburger/proprietary/vendor/lib/vendor.qti.hardware.radio.uim_remote_client@1.0_vendor.so:system/vendor/lib/vendor.qti.hardware.radio.uim_remote_client@1.0_vendor.so \
+    vendor/oneplus/cheeseburger/proprietary/vendor/lib/vendor.qti.hardware.radio.uim_remote_server@1.0_vendor.so:system/vendor/lib/vendor.qti.hardware.radio.uim_remote_server@1.0_vendor.so \
+    vendor/oneplus/cheeseburger/proprietary/vendor/lib/vendor.qti.hardware.tui_comm@1.0_vendor.so:system/vendor/lib/vendor.qti.hardware.tui_comm@1.0_vendor.so \
+    vendor/oneplus/cheeseburger/proprietary/vendor/lib/vendor.qti.imsrtpservice@1.0-service-Impl.so:system/vendor/lib/vendor.qti.imsrtpservice@1.0-service-Impl.so \
+    vendor/oneplus/cheeseburger/proprietary/vendor/lib/vendor.qti.imsrtpservice@1.0_vendor.so:system/vendor/lib/vendor.qti.imsrtpservice@1.0_vendor.so \
+    vendor/oneplus/cheeseburger/proprietary/vendor/lib/vendor.qti.voiceprint@1.0.so:system/vendor/lib/vendor.qti.voiceprint@1.0.so \
+    vendor/oneplus/cheeseburger/proprietary/vendor/lib64/com.qualcomm.qti.dpm.api@1.0_vendor.so:system/vendor/lib64/com.qualcomm.qti.dpm.api@1.0_vendor.so \
+    vendor/oneplus/cheeseburger/proprietary/vendor/lib64/com.qualcomm.qti.imscmservice@1.0_vendor.so:system/vendor/lib64/com.qualcomm.qti.imscmservice@1.0_vendor.so \
+    vendor/oneplus/cheeseburger/proprietary/vendor/lib64/com.qualcomm.qti.wifidisplayhal@1.0-halimpl.so:system/vendor/lib64/com.qualcomm.qti.wifidisplayhal@1.0-halimpl.so \
+    vendor/oneplus/cheeseburger/proprietary/vendor/lib64/com.qualcomm.qti.wifidisplayhal@1.0-impl.so:system/vendor/lib64/com.qualcomm.qti.wifidisplayhal@1.0-impl.so \
+    vendor/oneplus/cheeseburger/proprietary/vendor/lib64/com.qualcomm.qti.wifidisplayhal@1.0_vendor.so:system/vendor/lib64/com.qualcomm.qti.wifidisplayhal@1.0_vendor.so \
+    vendor/oneplus/cheeseburger/proprietary/vendor/lib64/com.quicinc.cne.api@1.0.so:system/vendor/lib64/com.quicinc.cne.api@1.0.so \
+    vendor/oneplus/cheeseburger/proprietary/vendor/lib64/com.quicinc.cne.constants@1.0.so:system/vendor/lib64/com.quicinc.cne.constants@1.0.so \
+    vendor/oneplus/cheeseburger/proprietary/vendor/lib64/com.quicinc.cne.constants@2.0.so:system/vendor/lib64/com.quicinc.cne.constants@2.0.so \
+    vendor/oneplus/cheeseburger/proprietary/vendor/lib64/com.quicinc.cne.server@1.0.so:system/vendor/lib64/com.quicinc.cne.server@1.0.so \
+    vendor/oneplus/cheeseburger/proprietary/vendor/lib64/com.quicinc.cne.server@2.0.so:system/vendor/lib64/com.quicinc.cne.server@2.0.so \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib64/egl/eglSubDriverAndroid.so:system/vendor/lib64/egl/eglSubDriverAndroid.so \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib64/egl/libEGL_adreno.so:system/vendor/lib64/egl/libEGL_adreno.so \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib64/egl/libGLESv1_CM_adreno.so:system/vendor/lib64/egl/libGLESv1_CM_adreno.so \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib64/egl/libGLESv2_adreno.so:system/vendor/lib64/egl/libGLESv2_adreno.so \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib64/egl/libQTapGLES.so:system/vendor/lib64/egl/libQTapGLES.so \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib64/egl/libq3dtools_adreno.so:system/vendor/lib64/egl/libq3dtools_adreno.so \
+    vendor/oneplus/cheeseburger/proprietary/vendor/lib64/egl/libq3dtools_esx.so:system/vendor/lib64/egl/libq3dtools_esx.so \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib64/hw/activity_recognition.msm8998.so:system/vendor/lib64/hw/activity_recognition.msm8998.so \
-    vendor/oneplus/cheeseburger/proprietary/vendor/lib64/hw/flp.default.so:system/vendor/lib64/hw/flp.default.so \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib64/hw/gatekeeper.msm8998.so:system/vendor/lib64/hw/gatekeeper.msm8998.so \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib64/hw/keystore.msm8998.so:system/vendor/lib64/hw/keystore.msm8998.so \
+    vendor/oneplus/cheeseburger/proprietary/vendor/lib64/hw/sound_trigger.primary.msm8998.so:system/vendor/lib64/hw/sound_trigger.primary.msm8998.so \
+    vendor/oneplus/cheeseburger/proprietary/vendor/lib64/hw/thermal.msm8998.so:system/vendor/lib64/hw/thermal.msm8998.so \
+    vendor/oneplus/cheeseburger/proprietary/vendor/lib64/hw/vendor.qti.esepowermanager@1.0-impl.so:system/vendor/lib64/hw/vendor.qti.esepowermanager@1.0-impl.so \
+    vendor/oneplus/cheeseburger/proprietary/vendor/lib64/hw/vendor.qti.gnss@1.0-impl.so:system/vendor/lib64/hw/vendor.qti.gnss@1.0-impl.so \
+    vendor/oneplus/cheeseburger/proprietary/vendor/lib64/hw/vendor.qti.hardware.iop@1.0-impl.so:system/vendor/lib64/hw/vendor.qti.hardware.iop@1.0-impl.so \
+    vendor/oneplus/cheeseburger/proprietary/vendor/lib64/hw/vendor.qti.hardware.qteeconnector@1.0-impl.so:system/vendor/lib64/hw/vendor.qti.hardware.qteeconnector@1.0-impl.so \
+    vendor/oneplus/cheeseburger/proprietary/vendor/lib64/hw/vr.msm8998.so:system/vendor/lib64/hw/vr.msm8998.so \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib64/hw/vulkan.msm8998.so:system/vendor/lib64/hw/vulkan.msm8998.so \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib64/lib-dplmedia.so:system/vendor/lib64/lib-dplmedia.so \
-    vendor/oneplus/cheeseburger/proprietary/vendor/lib64/lib-ims-rcscmjni.so:system/vendor/lib64/lib-ims-rcscmjni.so \
-    vendor/oneplus/cheeseburger/proprietary/vendor/lib64/lib-imsSDP.so:system/vendor/lib64/lib-imsSDP.so \
-    vendor/oneplus/cheeseburger/proprietary/vendor/lib64/lib-imscamera.so:system/vendor/lib64/lib-imscamera.so \
+    vendor/oneplus/cheeseburger/proprietary/vendor/lib64/lib-imscmservice.so:system/vendor/lib64/lib-imscmservice.so \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib64/lib-imsdpl.so:system/vendor/lib64/lib-imsdpl.so \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib64/lib-imsqimf.so:system/vendor/lib64/lib-imsqimf.so \
-    vendor/oneplus/cheeseburger/proprietary/vendor/lib64/lib-imsrcs.so:system/vendor/lib64/lib-imsrcs.so \
-    vendor/oneplus/cheeseburger/proprietary/vendor/lib64/lib-imsrcscm.so:system/vendor/lib64/lib-imsrcscm.so \
-    vendor/oneplus/cheeseburger/proprietary/vendor/lib64/lib-imsrcscmclient.so:system/vendor/lib64/lib-imsrcscmclient.so \
-    vendor/oneplus/cheeseburger/proprietary/vendor/lib64/lib-imsrcscmservice.so:system/vendor/lib64/lib-imsrcscmservice.so \
-    vendor/oneplus/cheeseburger/proprietary/vendor/lib64/lib-imss.so:system/vendor/lib64/lib-imss.so \
-    vendor/oneplus/cheeseburger/proprietary/vendor/lib64/lib-imsvt.so:system/vendor/lib64/lib-imsvt.so \
+    vendor/oneplus/cheeseburger/proprietary/vendor/lib64/lib-imsrcs-v2.so:system/vendor/lib64/lib-imsrcs-v2.so \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib64/lib-imsxml.so:system/vendor/lib64/lib-imsxml.so \
-    vendor/oneplus/cheeseburger/proprietary/vendor/lib64/lib-rcsimssjni.so:system/vendor/lib64/lib-rcsimssjni.so \
-    vendor/oneplus/cheeseburger/proprietary/vendor/lib64/lib-rcsjni.so:system/vendor/lib64/lib-rcsjni.so \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib64/lib-rtpcommon.so:system/vendor/lib64/lib-rtpcommon.so \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib64/lib-rtpcore.so:system/vendor/lib64/lib-rtpcore.so \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib64/lib-rtpdaemoninterface.so:system/vendor/lib64/lib-rtpdaemoninterface.so \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib64/lib-rtpsl.so:system/vendor/lib64/lib-rtpsl.so \
-    vendor/oneplus/cheeseburger/proprietary/vendor/lib64/lib-sec-disp.so:system/vendor/lib64/lib-sec-disp.so \
+    vendor/oneplus/cheeseburger/proprietary/vendor/lib64/lib-uceservice.so:system/vendor/lib64/lib-uceservice.so \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib64/libC2D2.so:system/vendor/lib64/libC2D2.so \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib64/libCB.so:system/vendor/lib64/libCB.so \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib64/libDRPlugin.so:system/vendor/lib64/libDRPlugin.so \
+    vendor/oneplus/cheeseburger/proprietary/vendor/lib64/libGPTEE_vendor.so:system/vendor/lib64/libGPTEE_vendor.so \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib64/libGPreqcancel.so:system/vendor/lib64/libGPreqcancel.so \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib64/libGPreqcancel_svc.so:system/vendor/lib64/libGPreqcancel_svc.so \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib64/libI420colorconvert.so:system/vendor/lib64/libI420colorconvert.so \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib64/libOmxAacDec.so:system/vendor/lib64/libOmxAacDec.so \
+    vendor/oneplus/cheeseburger/proprietary/vendor/lib64/libOmxAlacDec.so:system/vendor/lib64/libOmxAlacDec.so \
+    vendor/oneplus/cheeseburger/proprietary/vendor/lib64/libOmxAlacDecSw.so:system/vendor/lib64/libOmxAlacDecSw.so \
+    vendor/oneplus/cheeseburger/proprietary/vendor/lib64/libOmxAmrwbplusDec.so:system/vendor/lib64/libOmxAmrwbplusDec.so \
+    vendor/oneplus/cheeseburger/proprietary/vendor/lib64/libOmxApeDec.so:system/vendor/lib64/libOmxApeDec.so \
+    vendor/oneplus/cheeseburger/proprietary/vendor/lib64/libOmxApeDecSw.so:system/vendor/lib64/libOmxApeDecSw.so \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib64/libOmxEvrcDec.so:system/vendor/lib64/libOmxEvrcDec.so \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib64/libOmxQcelp13Dec.so:system/vendor/lib64/libOmxQcelp13Dec.so \
+    vendor/oneplus/cheeseburger/proprietary/vendor/lib64/libOmxVpp.so:system/vendor/lib64/libOmxVpp.so \
+    vendor/oneplus/cheeseburger/proprietary/vendor/lib64/libOmxWmaDec.so:system/vendor/lib64/libOmxWmaDec.so \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib64/libOpenCL.so:system/vendor/lib64/libOpenCL.so \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib64/libQSEEComAPI.so:system/vendor/lib64/libQSEEComAPI.so \
-    vendor/oneplus/cheeseburger/proprietary/vendor/lib64/libQtiTether.so:system/vendor/lib64/libQtiTether.so \
+    vendor/oneplus/cheeseburger/proprietary/vendor/lib64/libQTEEConnector_vendor.so:system/vendor/lib64/libQTEEConnector_vendor.so \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib64/libRSDriver_adreno.so:system/vendor/lib64/libRSDriver_adreno.so \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib64/libSecureUILib.so:system/vendor/lib64/libSecureUILib.so \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib64/libStDrvInt.so:system/vendor/lib64/libStDrvInt.so \
-    vendor/oneplus/cheeseburger/proprietary/vendor/lib64/libTimeService.so:system/vendor/lib64/libTimeService.so \
+    vendor/oneplus/cheeseburger/proprietary/vendor/lib64/lib_drplugin_server.so:system/vendor/lib64/lib_drplugin_server.so \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib64/libacdb-fts.so:system/vendor/lib64/libacdb-fts.so \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib64/libacdbloader.so:system/vendor/lib64/libacdbloader.so \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib64/libacdbrtac.so:system/vendor/lib64/libacdbrtac.so \
@@ -639,21 +966,19 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib64/libalarmservice_jni.so:system/vendor/lib64/libalarmservice_jni.so \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib64/libaudcal.so:system/vendor/lib64/libaudcal.so \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib64/libbccQTI.so:system/vendor/lib64/libbccQTI.so \
+    vendor/oneplus/cheeseburger/proprietary/vendor/lib64/libc2d30-a3xx.so:system/vendor/lib64/libc2d30-a3xx.so \
+    vendor/oneplus/cheeseburger/proprietary/vendor/lib64/libc2d30-a4xx.so:system/vendor/lib64/libc2d30-a4xx.so \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib64/libc2d30-a5xx.so:system/vendor/lib64/libc2d30-a5xx.so \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib64/libc2d30_bltlib.so:system/vendor/lib64/libc2d30_bltlib.so \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib64/libcne.so:system/vendor/lib64/libcne.so \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib64/libcneapiclient.so:system/vendor/lib64/libcneapiclient.so \
+    vendor/oneplus/cheeseburger/proprietary/vendor/lib64/libcneoplookup.so:system/vendor/lib64/libcneoplookup.so \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib64/libcneqmiutils.so:system/vendor/lib64/libcneqmiutils.so \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib64/libconfigdb.so:system/vendor/lib64/libconfigdb.so \
-    vendor/oneplus/cheeseburger/proprietary/vendor/lib64/libconnctrl.so:system/vendor/lib64/libconnctrl.so \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib64/libdataitems.so:system/vendor/lib64/libdataitems.so \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib64/libdiag.so:system/vendor/lib64/libdiag.so \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib64/libdisp-aba.so:system/vendor/lib64/libdisp-aba.so \
-    vendor/oneplus/cheeseburger/proprietary/vendor/lib64/libdpmctmgr.so:system/vendor/lib64/libdpmctmgr.so \
-    vendor/oneplus/cheeseburger/proprietary/vendor/lib64/libdpmfdmgr.so:system/vendor/lib64/libdpmfdmgr.so \
-    vendor/oneplus/cheeseburger/proprietary/vendor/lib64/libdpmframework.so:system/vendor/lib64/libdpmframework.so \
-    vendor/oneplus/cheeseburger/proprietary/vendor/lib64/libdpmnsrm.so:system/vendor/lib64/libdpmnsrm.so \
-    vendor/oneplus/cheeseburger/proprietary/vendor/lib64/libdpmtcm.so:system/vendor/lib64/libdpmtcm.so \
+    vendor/oneplus/cheeseburger/proprietary/vendor/lib64/libdpmqmihal.so:system/vendor/lib64/libdpmqmihal.so \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib64/libdrmfs.so:system/vendor/lib64/libdrmfs.so \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib64/libdrmtime.so:system/vendor/lib64/libdrmtime.so \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib64/libdrplugin_client.so:system/vendor/lib64/libdrplugin_client.so \
@@ -665,30 +990,33 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib64/libflp.so:system/vendor/lib64/libflp.so \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib64/libgdtap.so:system/vendor/lib64/libgdtap.so \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib64/libgeofence.so:system/vendor/lib64/libgeofence.so \
+    vendor/oneplus/cheeseburger/proprietary/vendor/lib64/libgnsspps.so:system/vendor/lib64/libgnsspps.so \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib64/libgsl.so:system/vendor/lib64/libgsl.so \
-    vendor/oneplus/cheeseburger/proprietary/vendor/lib64/libhwdaphal.so:system/vendor/lib64/libhwdaphal.so \
+    vendor/oneplus/cheeseburger/proprietary/vendor/lib64/libhdr_tm.so:system/vendor/lib64/libhdr_tm.so \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib64/libidl.so:system/vendor/lib64/libidl.so \
-    vendor/oneplus/cheeseburger/proprietary/vendor/lib64/libimscamera_jni.so:system/vendor/lib64/libimscamera_jni.so \
-    vendor/oneplus/cheeseburger/proprietary/vendor/lib64/libimsmedia_jni.so:system/vendor/lib64/libimsmedia_jni.so \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib64/libizat_client_api.so:system/vendor/lib64/libizat_client_api.so \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib64/libizat_core.so:system/vendor/lib64/libizat_core.so \
+    vendor/oneplus/cheeseburger/proprietary/vendor/lib64/libkeymasterdeviceutils.so:system/vendor/lib64/libkeymasterdeviceutils.so \
+    vendor/oneplus/cheeseburger/proprietary/vendor/lib64/libkeymasterprovision.so:system/vendor/lib64/libkeymasterprovision.so \
+    vendor/oneplus/cheeseburger/proprietary/vendor/lib64/libkeymasterutils.so:system/vendor/lib64/libkeymasterutils.so \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib64/liblbs_core.so:system/vendor/lib64/liblbs_core.so \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib64/libllvm-glnext.so:system/vendor/lib64/libllvm-glnext.so \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib64/libllvm-qcom.so:system/vendor/lib64/libllvm-qcom.so \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib64/libllvm-qgl.so:system/vendor/lib64/libllvm-qgl.so \
-    vendor/oneplus/cheeseburger/proprietary/vendor/lib64/libloc_ext.so:system/vendor/lib64/libloc_ext.so \
+    vendor/oneplus/cheeseburger/proprietary/vendor/lib64/libloc_api_v02.so:system/vendor/lib64/libloc_api_v02.so \
+    vendor/oneplus/cheeseburger/proprietary/vendor/lib64/libloc_ds_api.so:system/vendor/lib64/libloc_ds_api.so \
+    vendor/oneplus/cheeseburger/proprietary/vendor/lib64/libloc_externalDr.so:system/vendor/lib64/libloc_externalDr.so \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib64/liblocationservice.so:system/vendor/lib64/liblocationservice.so \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib64/liblocationservice_glue.so:system/vendor/lib64/liblocationservice_glue.so \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib64/liblowi_client.so:system/vendor/lib64/liblowi_client.so \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib64/liblowi_wifihal.so:system/vendor/lib64/liblowi_wifihal.so \
-    vendor/oneplus/cheeseburger/proprietary/vendor/lib64/liblowi_wifihal_nl.so:system/vendor/lib64/liblowi_wifihal_nl.so \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib64/liblqe.so:system/vendor/lib64/liblqe.so \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib64/libmdmdetect.so:system/vendor/lib64/libmdmdetect.so \
-    vendor/oneplus/cheeseburger/proprietary/vendor/lib64/libmiracast.so:system/vendor/lib64/libmiracast.so \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib64/libmm-color-convertor.so:system/vendor/lib64/libmm-color-convertor.so \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib64/libmm-disp-apis.so:system/vendor/lib64/libmm-disp-apis.so \
+    vendor/oneplus/cheeseburger/proprietary/vendor/lib64/libmm-hdcpmgr.so:system/vendor/lib64/libmm-hdcpmgr.so \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib64/libmm-qdcm.so:system/vendor/lib64/libmm-qdcm.so \
-    vendor/oneplus/cheeseburger/proprietary/vendor/lib64/libmmosal.so:system/vendor/lib64/libmmosal.so \
+    vendor/oneplus/cheeseburger/proprietary/vendor/lib64/libmmosal_proprietary.so:system/vendor/lib64/libmmosal_proprietary.so \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib64/libnetmgr.so:system/vendor/lib64/libnetmgr.so \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib64/libpdmapper.so:system/vendor/lib64/libpdmapper.so \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib64/libpdnotifier.so:system/vendor/lib64/libpdnotifier.so \
@@ -709,7 +1037,6 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib64/libqseed3.so:system/vendor/lib64/libqseed3.so \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib64/libquipc_os_api.so:system/vendor/lib64/libquipc_os_api.so \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib64/libqvop-service.so:system/vendor/lib64/libqvop-service.so \
-    vendor/oneplus/cheeseburger/proprietary/vendor/lib64/librcc.so:system/vendor/lib64/librcc.so \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib64/libril-qc-ltedirectdisc.so:system/vendor/lib64/libril-qc-ltedirectdisc.so \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib64/libril-qc-qmi-1.so:system/vendor/lib64/libril-qc-qmi-1.so \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib64/libril-qc-radioconfig.so:system/vendor/lib64/libril-qc-radioconfig.so \
@@ -718,62 +1045,83 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib64/librpmb.so:system/vendor/lib64/librpmb.so \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib64/librs_adreno.so:system/vendor/lib64/librs_adreno.so \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib64/librs_adreno_sha1.so:system/vendor/lib64/librs_adreno_sha1.so \
-    vendor/oneplus/cheeseburger/proprietary/vendor/lib64/libsd_sdk_display.so:system/vendor/lib64/libsd_sdk_display.so \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib64/libsdm-color.so:system/vendor/lib64/libsdm-color.so \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib64/libsdm-diag.so:system/vendor/lib64/libsdm-diag.so \
+    vendor/oneplus/cheeseburger/proprietary/vendor/lib64/libsdm-disp-vndapis.so:system/vendor/lib64/libsdm-disp-vndapis.so \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib64/libsdmextension.so:system/vendor/lib64/libsdmextension.so \
+    vendor/oneplus/cheeseburger/proprietary/vendor/lib64/libsdsprpc.so:system/vendor/lib64/libsdsprpc.so \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib64/libsecureui.so:system/vendor/lib64/libsecureui.so \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib64/libsecureui_svcsock.so:system/vendor/lib64/libsecureui_svcsock.so \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib64/libsensor1.so:system/vendor/lib64/libsensor1.so \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib64/libsensor_reg.so:system/vendor/lib64/libsensor_reg.so \
-    vendor/oneplus/cheeseburger/proprietary/vendor/lib64/libsensor_test.so:system/vendor/lib64/libsensor_test.so \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib64/libsensor_thresh.so:system/vendor/lib64/libsensor_thresh.so \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib64/libsensor_user_cal.so:system/vendor/lib64/libsensor_user_cal.so \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib64/libsettings.so:system/vendor/lib64/libsettings.so \
+    vendor/oneplus/cheeseburger/proprietary/vendor/lib64/libslimclient.so:system/vendor/lib64/libslimclient.so \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib64/libsmemlog.so:system/vendor/lib64/libsmemlog.so \
+    vendor/oneplus/cheeseburger/proprietary/vendor/lib64/libsns_low_lat_stream_stub.so:system/vendor/lib64/libsns_low_lat_stream_stub.so \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib64/libspl.so:system/vendor/lib64/libspl.so \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib64/libssd.so:system/vendor/lib64/libssd.so \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib64/libsystem_health_mon.so:system/vendor/lib64/libsystem_health_mon.so \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib64/libthermalioctl.so:system/vendor/lib64/libthermalioctl.so \
-    vendor/oneplus/cheeseburger/proprietary/vendor/lib64/libtinyxml2_1.so:system/vendor/lib64/libtinyxml2_1.so \
-    vendor/oneplus/cheeseburger/proprietary/vendor/lib64/libuiblur.so:system/vendor/lib64/libuiblur.so \
+    vendor/oneplus/cheeseburger/proprietary/vendor/lib64/libtzdrmgenprov.so:system/vendor/lib64/libtzdrmgenprov.so \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib64/libulp2.so:system/vendor/lib64/libulp2.so \
-    vendor/oneplus/cheeseburger/proprietary/vendor/lib64/libvendorconn.so:system/vendor/lib64/libvendorconn.so \
-    vendor/oneplus/cheeseburger/proprietary/vendor/lib64/libvoice-svc.so:system/vendor/lib64/libvoice-svc.so \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib64/libvpphvx.so:system/vendor/lib64/libvpphvx.so \
+    vendor/oneplus/cheeseburger/proprietary/vendor/lib64/libvpplibrary.so:system/vendor/lib64/libvpplibrary.so \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib64/libwms.so:system/vendor/lib64/libwms.so \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib64/libwqe.so:system/vendor/lib64/libwqe.so \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib64/libxml.so:system/vendor/lib64/libxml.so \
-    vendor/oneplus/cheeseburger/proprietary/vendor/lib64/libxt_native.so:system/vendor/lib64/libxt_native.so \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib64/libxtadapter.so:system/vendor/lib64/libxtadapter.so \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib64/libxtwifi_ulp_adaptor.so:system/vendor/lib64/libxtwifi_ulp_adaptor.so \
+    vendor/oneplus/cheeseburger/proprietary/vendor/lib64/mediadrm/libdrmclearkeyplugin.so:system/vendor/lib64/mediadrm/libdrmclearkeyplugin.so \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib64/sensor_calibrate.so:system/vendor/lib64/sensor_calibrate.so \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib64/sensors.ssc.so:system/vendor/lib64/sensors.ssc.so \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib64/soundfx/libqcbassboost.so:system/vendor/lib64/soundfx/libqcbassboost.so \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib64/soundfx/libqcreverb.so:system/vendor/lib64/soundfx/libqcreverb.so \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib64/soundfx/libqcvirt.so:system/vendor/lib64/soundfx/libqcvirt.so \
-    vendor/oneplus/cheeseburger/proprietary/vendor/qcril.db:system/vendor/qcril.db
+    vendor/oneplus/cheeseburger/proprietary/vendor/lib64/vendor.display.color@1.0_vendor.so:system/vendor/lib64/vendor.display.color@1.0_vendor.so \
+    vendor/oneplus/cheeseburger/proprietary/vendor/lib64/vendor.display.postproc@1.0_vendor.so:system/vendor/lib64/vendor.display.postproc@1.0_vendor.so \
+    vendor/oneplus/cheeseburger/proprietary/vendor/lib64/vendor.qti.esepowermanager@1.0_vendor.so:system/vendor/lib64/vendor.qti.esepowermanager@1.0_vendor.so \
+    vendor/oneplus/cheeseburger/proprietary/vendor/lib64/vendor.qti.gnss@1.0_vendor.so:system/vendor/lib64/vendor.qti.gnss@1.0_vendor.so \
+    vendor/oneplus/cheeseburger/proprietary/vendor/lib64/vendor.qti.hardware.alarm@1.0.so:system/vendor/lib64/vendor.qti.hardware.alarm@1.0.so \
+    vendor/oneplus/cheeseburger/proprietary/vendor/lib64/vendor.qti.hardware.fingerprint@1.0.so:system/vendor/lib64/vendor.qti.hardware.fingerprint@1.0.so \
+    vendor/oneplus/cheeseburger/proprietary/vendor/lib64/vendor.qti.hardware.iop@1.0_vendor.so:system/vendor/lib64/vendor.qti.hardware.iop@1.0_vendor.so \
+    vendor/oneplus/cheeseburger/proprietary/vendor/lib64/vendor.qti.hardware.perf@1.0_vendor.so:system/vendor/lib64/vendor.qti.hardware.perf@1.0_vendor.so \
+    vendor/oneplus/cheeseburger/proprietary/vendor/lib64/vendor.qti.hardware.qdutils_disp@1.0_vendor.so:system/vendor/lib64/vendor.qti.hardware.qdutils_disp@1.0_vendor.so \
+    vendor/oneplus/cheeseburger/proprietary/vendor/lib64/vendor.qti.hardware.qteeconnector@1.0_vendor.so:system/vendor/lib64/vendor.qti.hardware.qteeconnector@1.0_vendor.so \
+    vendor/oneplus/cheeseburger/proprietary/vendor/lib64/vendor.qti.hardware.radio.am@1.0_vendor.so:system/vendor/lib64/vendor.qti.hardware.radio.am@1.0_vendor.so \
+    vendor/oneplus/cheeseburger/proprietary/vendor/lib64/vendor.qti.hardware.radio.atcmdfwd@1.0_vendor.so:system/vendor/lib64/vendor.qti.hardware.radio.atcmdfwd@1.0_vendor.so \
+    vendor/oneplus/cheeseburger/proprietary/vendor/lib64/vendor.qti.hardware.radio.ims@1.0_vendor.so:system/vendor/lib64/vendor.qti.hardware.radio.ims@1.0_vendor.so \
+    vendor/oneplus/cheeseburger/proprietary/vendor/lib64/vendor.qti.hardware.radio.lpa@1.0_vendor.so:system/vendor/lib64/vendor.qti.hardware.radio.lpa@1.0_vendor.so \
+    vendor/oneplus/cheeseburger/proprietary/vendor/lib64/vendor.qti.hardware.radio.qcrilhook@1.0_vendor.so:system/vendor/lib64/vendor.qti.hardware.radio.qcrilhook@1.0_vendor.so \
+    vendor/oneplus/cheeseburger/proprietary/vendor/lib64/vendor.qti.hardware.radio.qtiradio@1.0_vendor.so:system/vendor/lib64/vendor.qti.hardware.radio.qtiradio@1.0_vendor.so \
+    vendor/oneplus/cheeseburger/proprietary/vendor/lib64/vendor.qti.hardware.radio.uim@1.0_vendor.so:system/vendor/lib64/vendor.qti.hardware.radio.uim@1.0_vendor.so \
+    vendor/oneplus/cheeseburger/proprietary/vendor/lib64/vendor.qti.hardware.radio.uim_remote_client@1.0_vendor.so:system/vendor/lib64/vendor.qti.hardware.radio.uim_remote_client@1.0_vendor.so \
+    vendor/oneplus/cheeseburger/proprietary/vendor/lib64/vendor.qti.hardware.radio.uim_remote_server@1.0_vendor.so:system/vendor/lib64/vendor.qti.hardware.radio.uim_remote_server@1.0_vendor.so \
+    vendor/oneplus/cheeseburger/proprietary/vendor/lib64/vendor.qti.hardware.tui_comm@1.0_vendor.so:system/vendor/lib64/vendor.qti.hardware.tui_comm@1.0_vendor.so \
+    vendor/oneplus/cheeseburger/proprietary/vendor/lib64/vendor.qti.imsrtpservice@1.0-service-Impl.so:system/vendor/lib64/vendor.qti.imsrtpservice@1.0-service-Impl.so \
+    vendor/oneplus/cheeseburger/proprietary/vendor/lib64/vendor.qti.imsrtpservice@1.0_vendor.so:system/vendor/lib64/vendor.qti.imsrtpservice@1.0_vendor.so \
+    vendor/oneplus/cheeseburger/proprietary/vendor/lib64/vendor.qti.voiceprint@1.0.so:system/vendor/lib64/vendor.qti.voiceprint@1.0.so \
+    vendor/oneplus/cheeseburger/proprietary/vendor/radio/qcril_database/qcril.db:system/vendor/radio/qcril_database/qcril.db
 
 PRODUCT_PACKAGES += \
-    libloc_api_v02 \
     libbtnv \
     libgpustats \
-    libsdm-disp-apis \
     libthermalclient \
     libtime_genoff \
+    libloc_api_v02 \
     QtiTelephonyService \
-    TimeService \
     datastatusnotification \
     embms \
-    shutdownlistener \
+    ims \
+    imssettings \
+    radioconfig \
     CNEService \
-    QtiTetherService \
     com.qualcomm.location \
     dpmserviceapp \
     qcrilmsgtunnel \
+    TimeService \
     colorservice \
-    ims \
-    imssettings \
     qcnvitems \
     qcrilhook
 endif
@@ -781,23 +1129,15 @@ endif
 -include vendor/extra/devices.mk
 ifneq ($(call is-qc-perf-target),true)
 PRODUCT_COPY_FILES += \
-    vendor/oneplus/cheeseburger/proprietary/bin/iop:system/bin/iop \
-    vendor/oneplus/cheeseburger/proprietary/vendor/bin/perfd:system/vendor/bin/perfd \
-    vendor/oneplus/cheeseburger/proprietary/vendor/etc/perf-profile0.conf:system/vendor/etc/perf-profile0.conf \
-    vendor/oneplus/cheeseburger/proprietary/vendor/etc/perf-profile1.conf:system/vendor/etc/perf-profile1.conf \
-    vendor/oneplus/cheeseburger/proprietary/vendor/etc/perf-profile2.conf:system/vendor/etc/perf-profile2.conf \
-    vendor/oneplus/cheeseburger/proprietary/vendor/etc/perf-profile3.conf:system/vendor/etc/perf-profile3.conf \
-    vendor/oneplus/cheeseburger/proprietary/vendor/etc/perf-profile4.conf:system/vendor/etc/perf-profile4.conf \
-    vendor/oneplus/cheeseburger/proprietary/vendor/etc/perf-profile5.conf:system/vendor/etc/perf-profile5.conf \
-    vendor/oneplus/cheeseburger/proprietary/vendor/etc/perf-profile6.conf:system/vendor/etc/perf-profile6.conf \
-    vendor/oneplus/cheeseburger/proprietary/vendor/lib/libqti-iop-client.so:system/vendor/lib/libqti-iop-client.so \
-    vendor/oneplus/cheeseburger/proprietary/vendor/lib/libqti-iop.so:system/vendor/lib/libqti-iop.so \
+    vendor/oneplus/cheeseburger/proprietary/vendor/lib/libperfgluelayer.so:system/vendor/lib/libperfgluelayer.so \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib/libqti-perfd-client.so:system/vendor/lib/libqti-perfd-client.so \
-    vendor/oneplus/cheeseburger/proprietary/vendor/lib/libqti-util.so:system/vendor/lib/libqti-util.so \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib/libqti-utils.so:system/vendor/lib/libqti-utils.so \
-    vendor/oneplus/cheeseburger/proprietary/vendor/lib64/libqti-iop-client.so:system/vendor/lib64/libqti-iop-client.so \
-    vendor/oneplus/cheeseburger/proprietary/vendor/lib64/libqti-iop.so:system/vendor/lib64/libqti-iop.so \
+    vendor/oneplus/cheeseburger/proprietary/vendor/lib/libqtigef.so:system/vendor/lib/libqtigef.so \
+    vendor/oneplus/cheeseburger/proprietary/vendor/lib/vendor.qti.hardware.perf@1.0_vendor.so:system/vendor/lib/vendor.qti.hardware.perf@1.0_vendor.so \
+    vendor/oneplus/cheeseburger/proprietary/vendor/lib64/libperfgluelayer.so:system/vendor/lib64/libperfgluelayer.so \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib64/libqti-perfd-client.so:system/vendor/lib64/libqti-perfd-client.so \
     vendor/oneplus/cheeseburger/proprietary/vendor/lib64/libqti-util.so:system/vendor/lib64/libqti-util.so \
-    vendor/oneplus/cheeseburger/proprietary/vendor/lib64/libqti-utils.so:system/vendor/lib64/libqti-utils.so
+    vendor/oneplus/cheeseburger/proprietary/vendor/lib64/libqti-utils.so:system/vendor/lib64/libqti-utils.so \
+    vendor/oneplus/cheeseburger/proprietary/vendor/lib64/libqtigef.so:system/vendor/lib64/libqtigef.so \
+    vendor/oneplus/cheeseburger/proprietary/vendor/lib64/vendor.qti.hardware.perf@1.0_vendor.so:system/vendor/lib64/vendor.qti.hardware.perf@1.0_vendor.so
 endif
