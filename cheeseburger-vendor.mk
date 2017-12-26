@@ -1108,7 +1108,6 @@ PRODUCT_PACKAGES += \
     libtime_genoff \
     libloc_api_v02 \
     QtiTelephonyService \
-    SimSettings \
     datastatusnotification \
     embms \
     ims \
